@@ -1,4 +1,3 @@
-<script>
 function openConsultationModal() {
   document.getElementById("consultationModal").style.display = "flex";
 }
@@ -13,5 +12,4 @@ window.onclick = function(event) {
   if (event.target === modal) {
     closeConsultationModal();
   }
-}
-</script>
+};
