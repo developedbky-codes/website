@@ -37,8 +37,8 @@
   <section class="testimonial">
     <div class="wrap">
       <div class="testimonial-inner">
-        <blockquote> Eph. 4:9-10 - "Two are better than one, because they have a good return for their labor: If either of them falls down, one can help the other up."</blockquote>
-        <cite>— A DevelopedByK couple</cite>
+        <blockquote>"Two are better than one, because they have a good return for their labor: If either of them falls down, one can help the other up."</blockquote>
+        <cite>— Eph. 4:9-10</cite>
       </div>
     </div>
   </section>
@@ -51,10 +51,52 @@
           <h2 style="margin-bottom:16px;">Ready to begin?</h2>
           <p>Share a few details and we'll follow up within two business days to talk through scope, timeline, and whether we're the right fit.</p>
           <div class="contact-detail"><span>Email</span><span>k_andrews@developedbyk.com</span></div>
-          <div class="contact-detail"><span>Response time</span><span>Within 2 business days</span></div>
-          <div class="contact-detail"><span>Currently booking</span><span>2027 &amp; select 2026 dates</span></div>
-        </div>
-        <form onsubmit="event.preventDefault(); this.querySelector('.btn').textContent='Inquiry sent'; this.querySelectorAll('input,textarea').forEach(function(el){el.disabled=true;});">
+          <div class="contact-detail"><span>Typical Response time</span><span>Within 2 business days</span></div>
+          <div class="contact-detail"><span>Currently booking</span><span>select 2027 &amp; 2028 dates</span></div>
+          <div class="contact-detail"><a href="#" onclick="openConsultationModal(); return false;">Consultation Booking Link</a>
+            </div>
+            
+            <!-- Consultation Modal -->
+            <div id="consultationModal" class="consultation-modal">
+              <div class="consultation-modal-content">
+            
+                <button class="consultation-close" onclick="closeConsultationModal()">
+                  &times;
+                </button>
+            
+                <h2>Before You Book</h2>
+            
+                <p>
+                  Thank you for your interest in trusting the DevelopedByK team to curate
+                  your luxury wedding! 💍💎 We specialize in strategy and coordination.
+                  From start to finish, we craft fully tailored experiences that help
+                  optimize for your hopes and desires while bringing efficiency and flow
+                  to the entire process.
+                </p>
+            
+                <p>
+                  A $50 consultation fee is required to secure your appointment.
+                  <a href="YOUR-PAYMENT-LINK" target="_blank" rel="noopener noreferrer">
+                    Consultations
+                  </a>
+                  must be completed prior to booking services. This fee will be applied
+                  toward your booking fee should you choose to move forward. Booking fees
+                  are determined based on the scope and level of service requested.
+                </p>
+            
+                <a
+                  href="YOUR-PAYMENT-LINK"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="consultation-button"
+                >
+                  Book Your Consultation
+                </a>
+            
+              </div>
+            </div>
+          </div>
+        <!-- <form onsubmit="event.preventDefault(); this.querySelector('.btn').textContent='Inquiry sent'; this.querySelectorAll('input,textarea').forEach(function(el){el.disabled=true;});">
           <div class="two-col">
             <div class="field">
               <label for="name">Your name(s)</label>
@@ -85,7 +127,7 @@
             <textarea id="details" placeholder="Venue, guest count, what matters most to you..."></textarea>
           </div>
           <button class="btn" type="submit">Send inquiry</button>
-        </form>
+        </form> -->
       </div>
     </div>
   </section>
