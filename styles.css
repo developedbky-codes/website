@@ -841,7 +841,7 @@ h2 {
 }
 
 .contact-info p {
-  max-width: 40ch;
+  max-width: none;
   margin-bottom: 26px;
   color: #40382c;
 }
