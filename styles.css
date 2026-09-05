@@ -244,7 +244,7 @@ nav {
   align-items: center;
   gap: 12px;
   margin-bottom: 24px;
-  color: var(--brass-bright);
+  color: #3B2A1C;
   font-size: 0.85rem;
 }
 
@@ -252,6 +252,11 @@ nav {
   width: 40px;
   height: 1px;
   background: var(--brass-bright);
+}
+
+.eyebrow-line .rule {
+  background: #3B2A1C;
+}
 }
 
 /* Hero heading */
