@@ -946,9 +946,26 @@ h2 {
   position: relative;
   width: 100%;
   max-width: 650px;
+  max-height: 85vh;
+  overflow-y: auto;
   background: #fdfbf7;
   padding: 50px;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 600px) {
+  .consultation-modal {
+    padding: 12px;
+  }
+  .consultation-modal-content {
+    padding: 32px 22px;
+    max-height: 90vh;
+  }
+  .consultation-close {
+    top: 10px;
+    right: 12px;
+    font-size: 26px;
+  }
 }
 
 .consultation-modal-content h2 {
