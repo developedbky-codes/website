@@ -107,10 +107,14 @@ nav {
   background: linear-gradient(0deg, rgba(46,33,21,0.62) 0%, rgba(46,33,21,0.12) 46%, rgba(46,33,21,0.02) 65%);
 }
 .hero-content {
-  position: relative; z-index: 2;
+  position: relative;
+  z-index: 2;
   width: 100%;
+  max-width: 720px;
   padding: 48px clamp(20px, 5vw, 64px) clamp(48px, 7vw, 76px);
-  color: var(--paper);
+  color: var(--ink);
+  background: rgba(253, 249, 241, 0.72);
+  border: 1px solid rgba(138, 110, 61, 0.2);
 }
 .eyebrow-line {
   display: flex; align-items: center; gap: 12px; margin-bottom: 24px;
