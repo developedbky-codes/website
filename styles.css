@@ -823,9 +823,13 @@ h2 {
 }
 
 .contact-grid {
-  display: grid;
-  grid-template-columns: 0.9fr 1.1fr;
-  gap: clamp(32px, 6vw, 72px);
+  display: block;
+  width: 100%;
+}
+
+.contact-info {
+  width: 100%;
+  max-width: none;
 }
 
 .contact-info p {
