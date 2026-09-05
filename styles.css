@@ -277,6 +277,59 @@ h2 { font-family: var(--serif); font-weight: 400; font-size: clamp(1.9rem, 3.6vw
 .contact-detail:last-of-type { border-bottom: 1px solid var(--line); }
 .contact-detail span:first-child { color: var(--ink-soft); }
 
+.consultation-modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.consultation-modal-content {
+  position: relative;
+  width: 100%;
+  max-width: 650px;
+  background: #fdfbf7;
+  padding: 50px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+}
+
+.consultation-modal-content h2 {
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.consultation-modal-content p {
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.consultation-modal-content a {
+  text-decoration: underline;
+}
+
+.consultation-close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  border: none;
+  background: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.consultation-button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 14px 28px;
+  text-decoration: none !important;
+  background: #222;
+  color: white !important;
+}
+
 form { display: flex; flex-direction: column; gap: 20px; }
 .field { display: flex; flex-direction: column; gap: 8px; }
 .field label { font-size: 0.82rem; color: var(--ink-soft); }
