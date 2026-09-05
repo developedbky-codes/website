@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Booking — DevelopedByK</title>
+<meta name="description" content="Begin an inquiry with DevelopedByK — luxury wedding strategy and coordination.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Archivo:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <a class="mark" href="index.html">Developed<em>ByK</em></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Welcome</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="booking.html" class="active">Booking</a></li>
+    </ul>
+    <a class="nav-cta" href="booking.html">Begin an inquiry</a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="page-banner booking-banner">
+    <img src="assets/hero-fabric.png" alt="Flowing champagne-toned silk, softly lit">
+    <div class="page-banner-content">
+      <div class="section-tag"><span class="rule"></span><span>Booking</span></div>
+      <h1>Begin your inquiry</h1>
+    </div>
+  </section>
+
+  <section class="testimonial">
+    <div class="wrap">
+      <div class="testimonial-inner">
+        <blockquote>We didn't realize how much was happening behind the scenes until our coordinator handed us a printed schedule and said, "You don't need to think about anything today." We didn't.</blockquote>
+        <cite>— A DevelopedByK couple</cite>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="section-tag" style="margin-bottom:20px;"><span class="rule"></span><span>Tell us about your day</span></div>
+          <h2 style="margin-bottom:16px;">Ready to begin?</h2>
+          <p>Share a few details and we'll follow up within two business days to talk through scope, timeline, and whether we're the right fit.</p>
+          <div class="contact-detail"><span>Email</span><span>k_andrews@developedbyk.com</span></div>
+          <div class="contact-detail"><span>Response time</span><span>Within 2 business days</span></div>
+          <div class="contact-detail"><span>Currently booking</span><span>2027 &amp; select 2026 dates</span></div>
+        </div>
+        <form onsubmit="event.preventDefault(); this.querySelector('.btn').textContent='Inquiry sent'; this.querySelectorAll('input,textarea').forEach(function(el){el.disabled=true;});">
+          <div class="two-col">
+            <div class="field">
+              <label for="name">Your name(s)</label>
+              <input id="name" type="text" required>
+            </div>
+            <div class="field">
+              <label for="date">Wedding date</label>
+              <input id="date" type="text" placeholder="Or a season, if not set yet">
+            </div>
+          </div>
+          <div class="two-col">
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" type="email" required>
+            </div>
+            <div class="field">
+              <label for="service">Interested in</label>
+              <select id="service">
+                <option>Full planning</option>
+                <option>Month-of coordination</option>
+                <option>Design &amp; styling</option>
+                <option>Not sure yet</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label for="details">A little about your day</label>
+            <textarea id="details" placeholder="Venue, guest count, what matters most to you..."></textarea>
+          </div>
+          <button class="btn" type="submit">Send inquiry</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <span>© 2026 DevelopedByK</span>
+  <nav class="nav-links" style="gap:20px;">
+    <a href="index.html">Welcome</a>
+    <a href="about.html">About</a>
+    <a href="booking.html">Booking</a>
+  </nav>
+</footer>
+
+</body>
+</html>
