@@ -213,7 +213,13 @@ h2 { font-family: var(--serif); font-weight: 400; font-size: clamp(1.9rem, 3.6vw
   background: var(--paper-warm);
   overflow: hidden;
 }
-.photo-placeholder img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.photo-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
 .photo-placeholder .tick { position: absolute; top: 14px; right: 14px; width: 8px; height: 8px; border-top: 1px solid var(--line-brass); border-right: 1px solid var(--line-brass); }
 .photo-placeholder .ph-label {
   font-family: var(--serif);
