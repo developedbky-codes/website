@@ -568,11 +568,8 @@ h2 {
   letter-spacing: 0.02em;
 }
 
-/* Keep each annotation on one line */
-
 .intro-annotation div {
   margin-bottom: 10px;
-  white-space: nowrap;
 }
 
 @media (max-width: 820px) {
