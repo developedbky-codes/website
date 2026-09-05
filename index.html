@@ -21,7 +21,16 @@
       <li><a href="booking.html">Booking</a></li>
     </ul>
     <a class="nav-cta" href="booking.html">Begin an inquiry</a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" onclick="toggleMobileNav(this)">
+      <span></span><span></span><span></span>
+    </button>
   </nav>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html" class="active">Welcome</a>
+    <a href="about.html">About</a>
+    <a href="booking.html">Booking</a>
+    <a href="booking.html" class="mobile-cta">Begin an inquiry</a>
+  </div>
 </header>
 
 <main>
@@ -171,12 +180,14 @@
 
 <footer>
   <span>© 2026 DevelopedByK</span>
-  <nav class="nav-links" style="gap:20px;">
+  <nav class="footer-nav">
     <a href="index.html">Welcome</a>
     <a href="about.html">About</a>
     <a href="booking.html">Booking</a>
   </nav>
 </footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>

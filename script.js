@@ -18,6 +18,13 @@ function closeConsultationModal() {
   }
 }
 
+function toggleMobileNav(btn) {
+  const panel = document.getElementById("mobileNav");
+  if (!panel) return;
+  const isOpen = panel.classList.toggle("open");
+  btn.setAttribute("aria-expanded", isOpen);
+}
+
 document.addEventListener("DOMContentLoaded", function () {
   const modal = document.getElementById("consultationModal");
 

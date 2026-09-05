@@ -33,7 +33,16 @@
     <a class="nav-cta" href="booking.html">
       Begin an inquiry
     </a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" onclick="toggleMobileNav(this)">
+      <span></span><span></span><span></span>
+    </button>
   </nav>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html">Welcome</a>
+    <a href="about.html">About</a>
+    <a href="booking.html" class="active">Booking</a>
+    <a href="booking.html" class="mobile-cta">Begin an inquiry</a>
+  </div>
 </header>
 
 
@@ -206,7 +215,7 @@
     © 2026 DevelopedByK
   </span>
 
-  <nav class="nav-links" style="gap:20px;">
+  <nav class="footer-nav">
 
     <a href="index.html">Welcome</a>
 
@@ -221,99 +230,7 @@
 
 <!-- JAVASCRIPT -->
 
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-
-  const modal = document.getElementById("consultationModal");
-
-  const consultationLink = document.querySelector(
-    '.contact-detail a[href="#"]'
-  );
-
-  const closeButton = document.querySelector(
-    ".consultation-close"
-  );
-
-
-  /* OPEN MODAL */
-
-  if (consultationLink && modal) {
-
-    consultationLink.addEventListener("click", function (event) {
-
-      event.preventDefault();
-
-      modal.style.display = "flex";
-
-      modal.setAttribute("aria-hidden", "false");
-
-      document.body.style.overflow = "hidden";
-
-    });
-
-  }
-
-
-  /* CLOSE MODAL */
-
-  if (closeButton && modal) {
-
-    closeButton.addEventListener("click", function () {
-
-      modal.style.display = "none";
-
-      modal.setAttribute("aria-hidden", "true");
-
-      document.body.style.overflow = "";
-
-    });
-
-  }
-
-
-  /* CLOSE WHEN CLICKING OUTSIDE */
-
-  if (modal) {
-
-    modal.addEventListener("click", function (event) {
-
-      if (event.target === modal) {
-
-        modal.style.display = "none";
-
-        modal.setAttribute("aria-hidden", "true");
-
-        document.body.style.overflow = "";
-
-      }
-
-    });
-
-  }
-
-
-  /* CLOSE WITH ESCAPE */
-
-  document.addEventListener("keydown", function (event) {
-
-    if (
-      event.key === "Escape" &&
-      modal &&
-      modal.style.display === "flex"
-    ) {
-
-      modal.style.display = "none";
-
-      modal.setAttribute("aria-hidden", "true");
-
-      document.body.style.overflow = "";
-
-    }
-
-  });
-
-});
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>

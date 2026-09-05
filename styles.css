@@ -196,6 +196,78 @@ nav {
   }
 }
 
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 32px;
+  height: 32px;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.nav-toggle span {
+  display: block;
+  width: 100%;
+  height: 1.5px;
+  background: var(--ink);
+}
+
+.mobile-nav {
+  display: none;
+  flex-direction: column;
+  border-top: 1px solid var(--line);
+  background: var(--paper);
+}
+
+.mobile-nav.open {
+  display: flex;
+}
+
+.mobile-nav a {
+  padding: 16px clamp(20px, 5vw, 64px);
+  border-bottom: 1px solid var(--line);
+  text-decoration: none;
+  font-size: 0.98rem;
+  color: var(--charcoal);
+}
+
+.mobile-nav a.active {
+  color: var(--brass);
+}
+
+.mobile-nav a.mobile-cta {
+  color: var(--brass);
+  font-weight: 600;
+}
+
+@media (max-width: 780px) {
+  .nav-toggle {
+    display: flex;
+  }
+}
+
+@media (min-width: 781px) {
+  .mobile-nav {
+    display: none !important;
+  }
+}
+
+/* footer navigation — always visible, independent of header nav-links */
+.footer-nav {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.footer-nav a {
+  text-decoration: none;
+}
+
 /* ---------- hero ---------- */
 
 .hero-banner {
@@ -257,7 +329,6 @@ nav {
 .eyebrow-line .rule {
   background: #3B2A1C;
 }
-}
 
 /* Hero heading */
 
@@ -272,7 +343,6 @@ h1 {
 
 h1 .line {
   display: inline-block;
-  white-space: nowrap;
   opacity: 0;
   transform: translateY(18px);
   animation: rise 0.9s cubic-bezier(.2,.7,.2,1) forwards;
@@ -457,7 +527,7 @@ h2 {
 
 .lede {
   font-size: 1.05rem;
-  max-width: max;
+  max-width: none;
   color: #40382c;
 }
 
@@ -786,7 +856,6 @@ h2 {
 
 .cta-band h2 {
   max-width: none;
-  white-space: nowrap;
 }
 
 @media (max-width: 700px) {
