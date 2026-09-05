@@ -8,7 +8,7 @@
   --charcoal: #2B2117;
   --line: rgba(46, 33, 21, 0.15);
   --line-brass: rgba(184, 145, 47, 0.5);
-  --serif: "Fraunces", serif;
+  --serif: "Cormorant Garamond", serif;
   --sans: "Archivo", sans-serif;
   --mono: "Space Mono", monospace;
 }
@@ -139,8 +139,8 @@ h1 .line:nth-child(3) { animation-delay: 0.35s; }
 h1 i { font-style: italic; color: var(--brass-bright); font-weight: 400; }
 
 .hero-sub {
-  margin-top: 22px; max-width: 46ch; font-size: 1.05rem;
-  color: #4A3A2A; 
+  margin-top: 22px; max-width: 60ch; font-size: 1.05rem;
+  color: #3B2A1C !important; 
 }
 .hero-actions { margin-top: 30px; display: flex; gap: 14px; flex-wrap: wrap; }
 
