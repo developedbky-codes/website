@@ -1,149 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Booking — DevelopedByK</title>
-<meta name="description" content="Begin an inquiry with DevelopedByK — luxury wedding strategy and coordination.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Archivo:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
-</head>
-<body>
+function openConsultationModal() {
+  const modal = document.getElementById("consultationModal");
+  if (modal) {
+    modal.style.display = "flex";
+    document.body.style.overflow = "hidden";
+  }
+}
 
-<header>
-  <nav>
-    <a class="mark" href="index.html">Developed<em>ByK</em></a>
-    <ul class="nav-links">
-      <li><a href="index.html">Welcome</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="booking.html" class="active">Booking</a></li>
-    </ul>
-    <a class="nav-cta" href="booking.html">Begin an inquiry</a>
-  </nav>
-</header>
+function closeConsultationModal() {
+  const modal = document.getElementById("consultationModal");
+  if (modal) {
+    modal.style.display = "none";
+    document.body.style.overflow = "";
+  }
+}
 
-<main>
+document.addEventListener("DOMContentLoaded", function () {
+  const modal = document.getElementById("consultationModal");
 
-  <section class="page-banner booking-banner">
-    <img src="assets/hero-fabric.png" alt="Flowing champagne-toned silk, softly lit">
-    <div class="page-banner-content">
-      <div class="section-tag"><span class="rule"></span><span>Booking</span></div>
-      <h1>Begin your inquiry</h1>
-    </div>
-  </section>
+  if (!modal) return;
 
-  <section class="testimonial">
-    <div class="wrap">
-      <div class="testimonial-inner">
-        <blockquote>"Two are better than one, because they have a good return for their labor: If either of them falls down, one can help the other up."</blockquote>
-        <cite>— Eph. 4:9-10</cite>
-      </div>
-    </div>
-  </section>
+  // Close when clicking outside the popup
+  modal.addEventListener("click", function (event) {
+    if (event.target === modal) {
+      closeConsultationModal();
+    }
+  });
 
-  <section class="contact" id="contact">
-    <div class="wrap">
-      <div class="contact-grid">
-        <div class="contact-info">
-          <div class="section-tag" style="margin-bottom:20px;"><span class="rule"></span><span>Tell us about your day</span></div>
-          <h2 style="margin-bottom:16px;">Ready to begin?</h2>
-          <p>Share a few details and we'll follow up within two business days to talk through scope, timeline, and whether we're the right fit.</p>
-          <div class="contact-detail"><span>Email</span><span>k_andrews@developedbyk.com</span></div>
-          <div class="contact-detail"><span>Typical Response time</span><span>Within 2 business days</span></div>
-          <div class="contact-detail"><span>Currently booking</span><span>select 2027 &amp; 2028 dates</span></div>
-          <div class="contact-detail"><a href="#" onclick="openConsultationModal(); return false;">Consultation Booking Link</a>
-            </div>
-            
-            <!-- Consultation Modal -->
-            <div id="consultationModal" class="consultation-modal">
-              <div class="consultation-modal-content">
-            
-                <button class="consultation-close" onclick="closeConsultationModal()">
-                  &times;
-                </button>
-            
-                <h2>Before You Book</h2>
-            
-                <p>
-                  Thank you for your interest in trusting the DevelopedByK team to curate
-                  your luxury wedding! 💍💎 We specialize in strategy and coordination.
-                  From start to finish, we craft fully tailored experiences that help
-                  optimize for your hopes and desires while bringing efficiency and flow
-                  to the entire process.
-                </p>
-            
-                <p>
-                  A $50 consultation fee is required to secure your appointment.
-                  <a href="YOUR-PAYMENT-LINK" target="_blank" rel="noopener noreferrer">
-                    Consultations
-                  </a>
-                  must be completed prior to booking services. This fee will be applied
-                  toward your booking fee should you choose to move forward. Booking fees
-                  are determined based on the scope and level of service requested.
-                </p>
-            
-                <a
-                  href="YOUR-PAYMENT-LINK"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="consultation-button"
-                >
-                  Book Your Consultation
-                </a>
-            
-              </div>
-            </div>
-          </div>
-        <!-- <form onsubmit="event.preventDefault(); this.querySelector('.btn').textContent='Inquiry sent'; this.querySelectorAll('input,textarea').forEach(function(el){el.disabled=true;});">
-          <div class="two-col">
-            <div class="field">
-              <label for="name">Your name(s)</label>
-              <input id="name" type="text" required>
-            </div>
-            <div class="field">
-              <label for="date">Wedding date</label>
-              <input id="date" type="text" placeholder="Or a season, if not set yet">
-            </div>
-          </div>
-          <div class="two-col">
-            <div class="field">
-              <label for="email">Email</label>
-              <input id="email" type="email" required>
-            </div>
-            <div class="field">
-              <label for="service">Interested in</label>
-              <select id="service">
-                <option>Full planning</option>
-                <option>Month-of coordination</option>
-                <option>Design &amp; styling</option>
-                <option>Not sure yet</option>
-              </select>
-            </div>
-          </div>
-          <div class="field">
-            <label for="details">A little about your day</label>
-            <textarea id="details" placeholder="Venue, guest count, what matters most to you..."></textarea>
-          </div>
-          <button class="btn" type="submit">Send inquiry</button>
-        </form> -->
-      </div>
-    </div>
-  </section>
-
-</main>
-
-<footer>
-  <span>© 2026 DevelopedByK</span>
-  <nav class="nav-links" style="gap:20px;">
-    <a href="index.html">Welcome</a>
-    <a href="about.html">About</a>
-    <a href="booking.html">Booking</a>
-  </nav>
-</footer>
-
-<script src="script.js"></script>
-
-</body>
-</html>
+  // Close with Escape key
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape") {
+      closeConsultationModal();
+    }
+  });
+});
