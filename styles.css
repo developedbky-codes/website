@@ -317,7 +317,7 @@ nav {
   gap: 12px;
   margin-bottom: 24px;
   color: #3B2A1C;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
 }
 
 .eyebrow-line .rule {
@@ -561,7 +561,7 @@ h2 {
 
 .intro-annotation {
   font-family: var(--mono);
-  font-size: 0.72rem;
+  font-size: 0.8rem;
   color: var(--ink-soft);
   border-left: 2px solid var(--brass);
   padding-left: 20px;
@@ -699,7 +699,7 @@ h2 {
 
 .spec-num {
   font-family: var(--mono);
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   color: var(--brass);
   margin-bottom: 22px;
 }
@@ -707,19 +707,19 @@ h2 {
 .spec-card h3 {
   font-family: var(--serif);
   font-weight: 500;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   margin-bottom: 14px;
 }
 
 .spec-card p {
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: #40382c;
   margin-bottom: 20px;
 }
 
 .spec-list {
   list-style: none;
-  font-size: 1.5rem;
+  font-size: 0.9rem;
 }
 
 .spec-list li {
