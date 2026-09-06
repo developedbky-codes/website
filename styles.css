@@ -21,7 +21,7 @@ body {
   background: var(--paper);
   color: var(--charcoal);
   font-family: var(--sans);
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
@@ -399,7 +399,7 @@ h1 i {
   color: var(--paper);
   text-decoration: none;
   padding: 14px 24px;
-  font-size: 0.92rem;
+  font-size: 1rem;
   border: 1px solid var(--ink);
   transition: background 0.25s ease, color 0.25s ease;
 }
@@ -505,7 +505,7 @@ section {
 }
 
 .section-tag {
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   color: var(--brass);
   display: flex;
   align-items: center;
@@ -712,18 +712,18 @@ h2 {
 }
 
 .spec-card p {
-  font-size: 0.95rem;
+  font-size: 1.5rem;
   color: #40382c;
   margin-bottom: 20px;
 }
 
 .spec-list {
   list-style: none;
-  font-size: 0.88rem;
+  font-size: 1.5rem;
 }
 
 .spec-list li {
-  padding: 9px 0;
+  padding: 16px 0;
   border-top: 1px solid var(--line);
   display: flex;
   justify-content: space-between;
@@ -790,7 +790,7 @@ h2 {
 
 .tl-coord {
   font-family: var(--mono);
-  font-size: 0.68rem;
+  font-size: 0.8rem;
   color: rgba(248,242,230,0.5);
   margin-bottom: 10px;
 }
@@ -803,7 +803,7 @@ h2 {
 }
 
 .tl-step p {
-  font-size: 0.86rem;
+  font-size: 1.2rem;
   color: rgba(248,242,230,0.7);
   max-width: 24ch;
 }
@@ -886,7 +886,7 @@ h2 {
   display: block;
   margin-top: 22px;
   font-style: normal;
-  font-size: 0.88rem;
+  font-size: 1rem;
   color: var(--ink-soft);
 }
 
@@ -913,7 +913,7 @@ h2 {
 }
 
 .contact-detail {
-  font-size: 0.92rem;
+  font-size: 1rem;
   padding: 14px 0;
   border-top: 1px solid var(--line);
   display: flex;
