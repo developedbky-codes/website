@@ -378,7 +378,7 @@ h1 i {
 .hero-sub {
   margin-top: 22px;
   max-width: 60ch;
-  font-size: 1.05rem;
+  font-size: 0.9rem;
   color: #3B2A1C !important;
 }
 
@@ -561,7 +561,7 @@ h2 {
 
 .intro-annotation {
   font-family: var(--mono);
-  font-size: 1.05rem;
+  font-size: 0.9rem;
   color: var(--ink-soft);
   border-left: 2px solid var(--brass);
   padding-left: 20px;
