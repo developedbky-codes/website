@@ -493,7 +493,7 @@ h1 i {
 /* ---------- section shells ---------- */
 
 section {
-  padding: clamp(64px, 10vw, 120px) 0;
+  padding: clamp(64px, 10vw, 40px) 0;
 }
 
 .section-head {
