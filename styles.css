@@ -543,11 +543,20 @@ h2 {
   border-bottom: 1px solid var(--line);
 }
 
+.intro .wrap {
+  max-width: 1440px;
+  padding: 0 clamp(16px, 3vw, 40px);
+}
+
 .intro-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  /* gap: clamp(30px, 6vw, 70px); */
+  grid-template-columns: 45fr 55fr;
+  gap: clamp(40px, 6vw, 80px);
   align-items: center;
+}
+
+.intro-copy h2 {
+  max-width: 50ch;
 }
 
 .intro-copy p {
@@ -564,7 +573,7 @@ h2 {
   font-size: 0.9rem;
   color: var(--ink-soft);
   border-left: 2px solid var(--brass);
-  padding-left: 1px;
+  padding-left: 28px;
   letter-spacing: 0.02em;
 }
 
