@@ -546,12 +546,12 @@ h2 {
 .intro-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: clamp(30px, 6vw, 70px);
+  /* gap: clamp(30px, 6vw, 70px); */
   align-items: center;
 }
 
 .intro-copy p {
-  max-width: 48ch;
+  max-width: 50ch;
   margin-bottom: 16px;
 }
 
