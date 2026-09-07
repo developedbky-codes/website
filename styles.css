@@ -21,7 +21,7 @@ body {
   background: var(--paper);
   color: var(--charcoal);
   font-family: var(--sans);
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
@@ -716,19 +716,19 @@ h2 {
 .spec-card h3 {
   font-family: var(--serif);
   font-weight: 500;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   margin-bottom: 14px;
 }
 
 .spec-card p {
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: #40382c;
   margin-bottom: 20px;
 }
 
 .spec-list {
   list-style: none;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 .spec-list li {
