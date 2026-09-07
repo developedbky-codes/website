@@ -564,7 +564,7 @@ h2 {
   font-size: 0.9rem;
   color: var(--ink-soft);
   border-left: 2px solid var(--brass);
-  padding-left: 0px;
+  padding-left: 1px;
   letter-spacing: 0.02em;
 }
 
