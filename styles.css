@@ -257,6 +257,7 @@ nav {
 }
 
 /* footer navigation — always visible, independent of header nav-links */
+
 .footer-nav {
   display: flex;
   gap: 20px;
@@ -321,12 +322,9 @@ nav {
 }
 
 .eyebrow-line .rule {
-  width: 40px;
+  flex: 1;
+  width: auto;
   height: 1px;
-  background: var(--brass-bright);
-}
-
-.eyebrow-line .rule {
   background: #3B2A1C;
 }
 
@@ -421,8 +419,6 @@ h1 i {
   border-color: var(--paper);
 }
 
-/* Transparent brown founder button */
-
 .btn-ghost-on-image {
   background: transparent;
   border-color: var(--ink);
@@ -504,6 +500,29 @@ section {
   align-items: start;
 }
 
+/* Eyebrow spans the full width of the section */
+.section-head > .section-tag {
+  grid-column: 1 / -1;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+/* Dynamic horizontal rule */
+.section-tag .rule {
+  flex: 1;
+  width: auto;
+  height: 1px;
+  background: var(--brass);
+}
+
+/* H2 stays on the right side */
+.section-head > h2 {
+  grid-column: 2;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+}
+
 .bespoke-note {
   text-align: center;
   max-width: 60ch;
@@ -518,12 +537,6 @@ section {
   display: flex;
   align-items: center;
   gap: 10px;
-}
-
-.section-tag .rule {
-  width: 26px;
-  height: 1px;
-  background: var(--brass);
 }
 
 h2 {
@@ -542,6 +555,15 @@ h2 {
 @media (max-width: 820px) {
   .section-head {
     grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .section-head > .section-tag {
+    grid-column: 1;
+  }
+
+  .section-head > h2 {
+    grid-column: 1;
   }
 }
 
@@ -785,6 +807,10 @@ h2 {
   color: rgba(248,242,230,0.72);
 }
 
+.process .section-tag .rule {
+  background: var(--brass-bright);
+}
+
 .timeline {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -986,10 +1012,12 @@ h2 {
   .consultation-modal {
     padding: 12px;
   }
+
   .consultation-modal-content {
     padding: 32px 22px;
     max-height: 90vh;
   }
+
   .consultation-close {
     top: 10px;
     right: 12px;
@@ -1166,7 +1194,11 @@ footer {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(0deg, rgba(46, 33, 21, 0.72) 0%, rgba(46, 33, 21, 0) 45%);
+  background: linear-gradient(
+    0deg,
+    rgba(46, 33, 21, 0.72) 0%,
+    rgba(46, 33, 21, 0) 45%
+  );
   pointer-events: none;
 }
 
