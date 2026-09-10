@@ -525,9 +525,11 @@ section {
 /* FULL-WIDTH BESPOKE NOTE */
 
 .bespoke-note {
-  width: 100%;
+  width: 100vw;
   max-width: none;
-  margin: 0 0 clamp(40px, 6vw, 72px);
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  margin-bottom: clamp(40px, 6vw, 72px);
   text-align: center;
   font-size: 0.95rem;
   color: var(--ink-soft);
