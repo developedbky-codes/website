@@ -698,6 +698,17 @@ h2 {
   border: 1px solid var(--line);
 }
 
+.services blockquote {
+  width: 100%;
+  max-width: none;
+  font-family: var(--serif);
+  font-style: italic;
+  font-weight: 40;
+  font-size: clamp(1.3rem, 2.6vw, 1.7rem);
+  line-height: 1.4;
+  color: var(--charcoal);
+}
+
 .spec-card {
   background: var(--paper);
   padding: 36px 30px;
