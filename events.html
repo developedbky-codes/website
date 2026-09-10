@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Events — DevelopedByK</title>
+<meta name="description" content="A look at weddings and celebrations planned and coordinated by DevelopedByK.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Archivo:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <a class="mark" href="index.html">Developed<em>ByK</em></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Welcome</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="events.html" class="active">Events</a></li>
+      <li><a href="booking.html">Booking</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" onclick="toggleMobileNav(this)">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html">Welcome</a>
+    <a href="about.html">About</a>
+    <a href="events.html" class="active">Events</a>
+    <a href="booking.html">Booking</a>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-banner events-banner">
+    <img src="assets/hero-fabric.png" alt="Flowing champagne-toned silk, softly lit">
+    <div class="page-banner-content">
+      <div class="section-tag"><span class="rule"></span><span>Events</span></div>
+      <h1>A Few of Our Favorites</h1>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <p class="events-intro">A small collection of weddings and celebrations we've had the honor of planning and coordinating. Click any event to step through the day.</p>
+
+      <div class="gallery-grid">
+
+        <button
+          class="gallery-card"
+          data-event="event-1"
+          data-name="Amara &amp; Julian"
+          data-images='["assets/events/amara-julian/1.jpg","assets/events/amara-julian/2.jpg","assets/events/amara-julian/3.jpg","assets/events/amara-julian/4.jpg","assets/events/amara-julian/5.jpg"]'
+          onclick="openLightbox('event-1')"
+        >
+          <img src="assets/events/amara-julian/1.jpg" alt="Amara &amp; Julian's wedding">
+          <span class="gallery-caption">
+            <span class="name">Amara &amp; Julian</span>
+            <span class="meta">FULL PLANNING</span>
+          </span>
+        </button>
+
+        <button
+          class="gallery-card"
+          data-event="event-2"
+          data-name="Priya &amp; Marcus"
+          data-images='["assets/events/priya-marcus/1.jpg","assets/events/priya-marcus/2.jpg","assets/events/priya-marcus/3.jpg","assets/events/priya-marcus/4.jpg","assets/events/priya-marcus/5.jpg"]'
+          onclick="openLightbox('event-2')"
+        >
+          <img src="assets/events/priya-marcus/1.jpg" alt="Priya &amp; Marcus's wedding">
+          <span class="gallery-caption">
+            <span class="name">Priya &amp; Marcus</span>
+            <span class="meta">DAY-OF ORCHESTRATION</span>
+          </span>
+        </button>
+
+        <button
+          class="gallery-card"
+          data-event="event-3"
+          data-name="Simone &amp; Andre"
+          data-images='["assets/events/simone-andre/1.jpg","assets/events/simone-andre/2.jpg","assets/events/simone-andre/3.jpg","assets/events/simone-andre/4.jpg","assets/events/simone-andre/5.jpg"]'
+          onclick="openLightbox('event-3')"
+        >
+          <img src="assets/events/simone-andre/1.jpg" alt="Simone &amp; Andre's wedding">
+          <span class="gallery-caption">
+            <span class="name">Simone &amp; Andre</span>
+            <span class="meta">FULL PLANNING</span>
+          </span>
+        </button>
+
+        <button
+          class="gallery-card"
+          data-event="event-4"
+          data-name="Danielle &amp; Wes"
+          data-images='["assets/events/danielle-wes/1.jpg","assets/events/danielle-wes/2.jpg","assets/events/danielle-wes/3.jpg","assets/events/danielle-wes/4.jpg","assets/events/danielle-wes/5.jpg"]'
+          onclick="openLightbox('event-4')"
+        >
+          <img src="assets/events/danielle-wes/1.jpg" alt="Danielle &amp; Wes's wedding">
+          <span class="gallery-caption">
+            <span class="name">Danielle &amp; Wes</span>
+            <span class="meta">VENDOR SOURCING &amp; LOGISTICS</span>
+          </span>
+        </button>
+
+        <button
+          class="gallery-card"
+          data-event="event-5"
+          data-name="Renee &amp; Chris"
+          data-images='["assets/events/renee-chris/1.jpg","assets/events/renee-chris/2.jpg","assets/events/renee-chris/3.jpg","assets/events/renee-chris/4.jpg","assets/events/renee-chris/5.jpg"]'
+          onclick="openLightbox('event-5')"
+        >
+          <img src="assets/events/renee-chris/1.jpg" alt="Renee &amp; Chris's wedding">
+          <span class="gallery-caption">
+            <span class="name">Renee &amp; Chris</span>
+            <span class="meta">FULL PLANNING</span>
+          </span>
+        </button>
+
+        <button
+          class="gallery-card"
+          data-event="event-6"
+          data-name="Talia &amp; Micah"
+          data-images='["assets/events/talia-micah/1.jpg","assets/events/talia-micah/2.jpg","assets/events/talia-micah/3.jpg","assets/events/talia-micah/4.jpg","assets/events/talia-micah/5.jpg"]'
+          onclick="openLightbox('event-6')"
+        >
+          <img src="assets/events/talia-micah/1.jpg" alt="Talia &amp; Micah's wedding">
+          <span class="gallery-caption">
+            <span class="name">Talia &amp; Micah</span>
+            <span class="meta">DAY-OF ORCHESTRATION</span>
+          </span>
+        </button>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="wrap cta-band-inner">
+      <div>
+        <div class="section-tag" style="margin-bottom:14px;"><span class="rule"></span><span>Ready when you are</span></div>
+        <h2>Let's start with a conversation about your day.</h2>
+      </div>
+      <a class="btn" href="booking.html">Begin an inquiry</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <span>© 2026 DevelopedByK</span>
+  <nav class="footer-nav">
+    <a href="index.html">Welcome</a>
+    <a href="about.html">About</a>
+    <a href="events.html">Events</a>
+    <a href="booking.html">Booking</a>
+  </nav>
+</footer>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <div class="lightbox-stage">
+    <button class="lightbox-close" aria-label="Close" onclick="closeLightbox()">&times;</button>
+    <button class="lightbox-arrow prev" aria-label="Previous photo" onclick="prevImage()">&#8249;</button>
+    <div class="lightbox-image-wrap">
+      <img id="lightboxImg" src="" alt="">
+    </div>
+    <button class="lightbox-arrow next" aria-label="Next photo" onclick="nextImage()">&#8250;</button>
+    <div class="lightbox-caption">
+      <div class="name" id="lightboxName"></div>
+      <div class="counter" id="lightboxCounter"></div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
