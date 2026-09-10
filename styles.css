@@ -701,6 +701,7 @@ h2 {
 .services blockquote {
   width: 100%;
   max-width: none;
+  text-align: center;
   font-family: var(--serif);
   font-style: italic;
   font-weight: 40;
