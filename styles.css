@@ -650,6 +650,11 @@ h2 {
   .about-grid {
     grid-template-columns: 1fr;
   }
+
+  .about-grid img {
+    width: 70%;
+  }
+}
 }
 
 .philosophy {
