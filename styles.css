@@ -1206,18 +1206,16 @@ footer {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(46, 33, 21, 0.45);
+  background: rgba(46, 33, 21, 0.5);
   pointer-events: none;
 }
 
-.gallery-caption {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 2;
-  padding: 22px;
-  color: var(--paper);
+.gallery-caption .meta {
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  color: #fde5a4;
+  letter-spacing: 0.04em;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.45);
 }
 
 .gallery-caption .name {
