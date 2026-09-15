@@ -1175,7 +1175,6 @@ footer {
     grid-template-columns: 1fr;
   }
 }
-
 .gallery-card {
   position: relative;
   aspect-ratio: 4 / 5;
@@ -1210,12 +1209,14 @@ footer {
   pointer-events: none;
 }
 
-.gallery-caption .meta {
-  font-family: var(--sans);
-  font-size: 0.78rem;
-  color: #fde5a4;
-  letter-spacing: 0.04em;
-  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.45);
+/* Caption */
+.gallery-caption {
+  position: absolute;
+  left: 1.25rem;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  z-index: 2;
+  color: #fff;
 }
 
 .gallery-caption .name {
@@ -1223,6 +1224,7 @@ footer {
   font-size: 1.2rem;
   display: block;
   margin-bottom: 4px;
+  color: #fff;
 }
 
 .gallery-caption .meta {
@@ -1230,6 +1232,7 @@ footer {
   font-size: 0.78rem;
   color: #fde5a4;
   letter-spacing: 0.04em;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.45);
 }
 
 /* ---------- lightbox ---------- */
