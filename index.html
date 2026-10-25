@@ -4,13 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>DevelopedByK — Wedding Strategy & Coordination</title>
+  <title>DevelopedByK — Wedding Strategy &amp; Coordination</title>
+  <meta name="description" content="DevelopedByK is a wedding strategy house specializing in planning and coordination.">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+  <!-- Playfair Display = body text. Noto Serif = Droid Serif's current Google Fonts successor (headings). -->
   <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@400;500;600&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap"
     rel="stylesheet"
   >
 
@@ -35,31 +37,17 @@
 
         <span class="brand-copy">
           <strong>DEVELOPEDBYK</strong>
-          <small>
-            A WEDDING STRATEGY HOUSE SPECIALIZING IN PLANNING &amp; COORDINATION
-          </small>
+          <small>A WEDDING STRATEGY HOUSE SPECIALIZING IN PLANNING &amp; COORDINATION</small>
         </span>
 
       </a>
 
       <div class="nav-links">
-
-        <a href="index.html" class="active">
-          WELCOME
-        </a>
-
-        <a href="#services">
-          SERVICES
-        </a>
-
-        <a href="about.html">
-          ABOUT
-        </a>
-
-        <a href="booking.html">
-          INQUIRE
-        </a>
-
+        <a href="index.html" class="active">WELCOME</a>
+        <a href="index.html#services">SERVICES</a>
+        <a href="about.html">ABOUT</a>
+        <a href="events.html">CLASSICS</a>
+        <a href="booking.html">INQUIRE</a>
       </div>
 
       <button
@@ -77,27 +65,14 @@
     </nav>
 
     <div class="mobile-nav" id="mobileNav">
-
-      <a href="index.html">
-        WELCOME
-      </a>
-
-      <a href="#services">
-        SERVICES
-      </a>
-
-      <a href="about.html">
-        ABOUT
-      </a>
-
-      <a href="booking.html">
-        INQUIRE
-      </a>
-
+      <a href="index.html" class="active">WELCOME</a>
+      <a href="index.html#services">SERVICES</a>
+      <a href="about.html">ABOUT</a>
+      <a href="events.html">CLASSICS</a>
+      <a href="booking.html">INQUIRE</a>
     </div>
 
   </header>
-
 
   <!-- =========================================================
        HERO
@@ -105,28 +80,19 @@
 
   <main>
 
-    <section class="hero">
+    <section class="page-hero">
 
-      <div class="hero-content">
+      <img src="assets/hero-fabric.png" alt="" aria-hidden="true">
 
-        <p class="eyebrow">
-          FOR THE CELEBRATIONS THAT MEAN THE MOST
-        </p>
+      <div class="page-hero-overlay"></div>
 
-        <h1>
-          Your vision,<br>
-          <em>thoughtfully developed.</em>
-        </h1>
+      <div class="page-hero-content">
 
-        <p class="hero-description">
-          Wedding strategy and coordination for couples who value
-          intention, thoughtful details, and a seamless experience.
-        </p>
+        <p class="eyebrow">FOR THE CELEBRATIONS THAT MEAN THE MOST</p>
 
-        <a href="#aesthetic" class="hero-link">
-          EXPLORE THE DBK EXPERIENCE
-          <span>→</span>
-        </a>
+        <h1>Your vision, thoughtfully developed.</h1>
+        <p class="hero-text">Wedding strategy and coordination for couples who value intention, thoughtful details, and a seamless experience.</p>
+        <a href="#aesthetic" class="text-link hero-link">EXPLORE THE DBK EXPERIENCE →</a>
 
       </div>
 
@@ -137,402 +103,248 @@
          DBK AESTHETIC
     ======================================================== -->
 
-    <section class="aesthetic-section" id="aesthetic">
+    <section class="aesthetic-section bg-ink" id="aesthetic">
 
-      <div class="section-intro">
+      <div class="wrap">
 
-        <p class="section-label">
-          THE DBK Aesthetic
-        </p>
+        <p class="eyebrow">THE DBK AESTHETIC</p>
 
-        <p class="section-description">
-          Celebrations shaped by intention, thoughtful details,
-          and the beauty of being present.
-        </p>
+        <p class="subtitle">Celebrations shaped by intention, thoughtful details, and the beauty of being present.</p>
 
       </div>
-
 
       <div class="gallery">
 
-        <button
-          class="gallery-arrow prev"
-          type="button"
-          aria-label="Previous images"
-        >
-          ←
-        </button>
+        <button class="gallery-arrow prev" type="button" aria-label="Previous images">←</button>
 
         <div class="gallery-track">
 
-          <div class="gallery-slot">
-            <img
-              src="assets/heading1.png"
-              alt="Ceremony"
-            >
-          </div>
-
-          <div class="gallery-slot">
-            <img
-              src="assets/heading2.png"
-              alt="Ceremony"
-            >
-          </div>
-
-          <div class="gallery-slot">
-            <img
-              src="assets/heading3.png"
-              alt="Reception"
-            >
-          </div>
-
-          <div class="gallery-slot">
-            <img
-              src="assets/heading4.png"
-              alt="Reception"
-            >
-          </div>
-
+          <button type="button" class="gallery-slot" aria-label="View full image: Ceremony">
+            <img src="assets/heading1.png" alt="Ceremony">
+          </button>
+          <button type="button" class="gallery-slot" aria-label="View full image: Ceremony">
+            <img src="assets/heading2.png" alt="Ceremony">
+          </button>
+          <button type="button" class="gallery-slot" aria-label="View full image: Reception">
+            <img src="assets/heading3.png" alt="Reception">
+          </button>
+          <button type="button" class="gallery-slot" aria-label="View full image: Reception">
+            <img src="assets/heading4.png" alt="Reception">
+          </button>
         </div>
 
-        <button
-          class="gallery-arrow next"
-          type="button"
-          aria-label="Next images"
-        >
-          →
-        </button>
+        <button class="gallery-arrow next" type="button" aria-label="Next images">→</button>
 
       </div>
-
 
       <div class="gallery-dots" aria-hidden="true">
-
         <span class="active"></span>
         <span></span>
-
       </div>
 
-
-      <p class="gallery-caption">
-        <span></span>
-        A GLIMPSE INTO THE DBK EXPERIENCE
-      </p>
+      <p class="aesthetic-caption">CLICK ANY IMAGE TO VIEW IT FULL SIZE</p>
 
     </section>
-
 
 
     <!-- =======================================================
          SERVICES
     ======================================================== -->
 
-    <section class="services-section" id="services">
+    <section class="section bg-cream" id="services">
 
-      <div class="section-number">
-        02 — OUR SERVICES
-      </div>
+      <div class="wrap">
 
-      <div class="services-heading">
+        <p class="eyebrow">OUR SERVICES</p>
 
-        <h2>
-          Thoughtful support,
-          <em>tailored to your needs.</em>
-        </h2>
+        <h2>Thoughtful support, tailored to your needs.</h2>
 
-        <p>
-          Whether you need guidance from the beginning, support
-          with key planning components, or a trusted team to bring
-          your plans together, DBK offers services designed around
-          the needs of your celebration.
+        <p class="section-lead">
+          Whether you need guidance from the beginning, support with key
+          planning components, or a trusted team to bring your plans
+          together, DBK offers services designed around the needs of your
+          celebration.
         </p>
 
-      </div>
+        <div class="service-grid">
 
+          <article class="service-card">
+            <div class="service-image">
+              <img src="assets/heading2.png" alt="Wedding stationery and florals">
+            </div>
+            <div class="service-content">
+              <h3>Full Planning</h3>
+              <p>
+                A comprehensive planning experience for couples seeking
+                support across the wedding journey. From the initial vision
+                to the final farewell, we handle the details so you can
+                fully enjoy the process.
+              </p>
+              <a href="booking.html" class="text-link">LEARN MORE →</a>
+            </div>
+          </article>
 
-      <div class="service-grid">
+          <article class="service-card">
+            <div class="service-image">
+              <img src="assets/heading4.png" alt="Elegant wedding reception">
+            </div>
+            <div class="service-content">
+              <h3>Vendor Sourcing &amp; Logistics</h3>
+              <p>
+                Bring the right people and practical details into
+                alignment. From researching vendors and reviewing contracts
+                to managing communications and logistics, we make sure
+                nothing is overlooked.
+              </p>
+              <a href="booking.html" class="text-link">LEARN MORE →</a>
+            </div>
+          </article>
 
+          <article class="service-card">
+            <div class="service-image">
+              <img src="assets/heading5.png" alt="Wedding reception table setting">
+            </div>
+            <div class="service-content">
+              <h3>Day-Of Orchestration</h3>
+              <p>
+                Translate your plans into a coordinated and seamless
+                event-day experience. We manage timelines, communicate with
+                vendors, and oversee every detail so you can be present for
+                what matters most.
+              </p>
+              <a href="booking.html" class="text-link">LEARN MORE →</a>
+            </div>
+          </article>
 
-        <!-- SERVICE 1 -->
-
-        <article class="service-card">
-
-          <div class="service-image">
-
-            <img
-              src="assets/heading2.png"
-              alt="Wedding stationery and florals"
-            >
-
-          </div>
-
-          <div class="service-content">
-
-            <h3>
-              Full Planning
-            </h3>
-
-            <p>
-              A comprehensive planning experience for couples
-              seeking support across the wedding journey. From
-              the initial vision to the final farewell, we handle
-              the details so you can fully enjoy the process.
-            </p>
-
-            <a href="booking.html">
-              LEARN MORE →
-            </a>
-
-          </div>
-
-        </article>
-
-
-        <!-- SERVICE 2 -->
-
-        <article class="service-card">
-
-          <div class="service-image">
-
-            <img
-              src="assets/heading4.png"
-              alt="Elegant wedding reception"
-            >
-
-          </div>
-
-          <div class="service-content">
-
-            <h3>
-              Vendor Sourcing &amp; Logistics
-            </h3>
-
-            <p>
-              Bring the right people and practical details into
-              alignment. From researching vendors and reviewing
-              contracts to managing communications and logistics,
-              we make sure nothing is overlooked.
-            </p>
-
-            <a href="booking.html">
-              LEARN MORE →
-            </a>
-
-          </div>
-
-        </article>
-
-
-        <!-- SERVICE 3 -->
-
-        <article class="service-card">
-
-          <div class="service-image">
-
-            <img
-              src="assets/heading5.png"
-              alt="Wedding reception table setting"
-            >
-
-          </div>
-
-          <div class="service-content">
-
-            <h3>
-              Day-Of Orchestration
-            </h3>
-
-            <p>
-              Translate your plans into a coordinated and seamless
-              event-day experience. We manage timelines, communicate
-              with vendors, and oversee every detail so you can be
-              present for what matters most.
-            </p>
-
-            <a href="booking.html">
-              LEARN MORE →
-            </a>
-
-          </div>
-
-        </article>
-
-
-        <!-- SERVICE 4 -->
-
-        <article class="service-card">
-
-          <div class="service-image">
-
-            <img
-              src="assets/heading7.png"
-              alt="Wedding reception details"
-            >
-
-          </div>
-
-          <div class="service-content">
-
-            <h3>
-              Bespoke Add-Ons
-            </h3>
-
-            <p>
-              Bachelor(ette) Gift Boxes/Wedding Party Gift Boxes |
-              Bachelor(ette) Party | Bachelor(ette) Trip |
-              Bridal Suite Service/Groom’s Suite Service |
-              Custom Favors &amp; Gifts | Engagement Party |
-              Guest Gift Boxes | Stationery Design and Mailing |
-              Wedding Booklet/Digital Templates |
-              Wedding Party Proposal Boxes
-            </p>
-
-            <a href="booking.html">
-              LEARN MORE →
-            </a>
-
-          </div>
-
-        </article>
-
-      </div>
-
-    </section>
-
-        <!-- =======================================================
-         PHILOSOPHY
-    ======================================================== -->
-
-    <section class="philosophy-section">
-
-      <div class="section-number">
-        02 — OUR PHILOSOPHY
-      </div>
-
-      <div class="philosophy-content">
-
-        <h2>
-          A beautiful celebration
-          <em>begins long before the day itself.</em>
-        </h2>
-
-        <div class="philosophy-copy">
-
-          <p>
-            The most memorable weddings are not simply beautiful.
-            They are thoughtfully planned, carefully coordinated,
-            and shaped around the people celebrating.
-          </p>
-
-          <p>
-            DevelopedByK approaches wedding planning as both a
-            creative vision and a strategic process. From the
-            decisions that establish the foundation to the details
-            that bring everything together, each element has a purpose.
-          </p>
-
-          <p>
-            The result is a celebration that feels cohesive,
-            considered, and personal—with the right people and
-            systems in place to support the experience you envisioned.
-          </p>
+          <article class="service-card">
+            <div class="service-image">
+              <img src="assets/heading7.png" alt="Wedding reception details">
+            </div>
+            <div class="service-content">
+              <h3>Bespoke Add-Ons</h3>
+              <p>
+                Bachelor(ette) Gift Boxes/Wedding Party Gift Boxes |
+                Bachelor(ette) Party | Bachelor(ette) Trip | Bridal Suite
+                Service/Groom’s Suite Service | Custom Favors &amp; Gifts |
+                Engagement Party | Guest Gift Boxes | Stationery Design and
+                Mailing | Wedding Booklet/Digital Templates | Wedding Party
+                Proposal Boxes
+              </p>
+              <a href="booking.html" class="text-link">LEARN MORE →</a>
+            </div>
+          </article>
 
         </div>
 
       </div>
 
-      <div class="philosophy-image">
+    </section>
 
-        <img
-          src="assets/img123.png"
-          alt="Thoughtfully styled wedding table"
-        >
 
-      </div>
+    <!-- =======================================================
+         PHILOSOPHY
+    ======================================================== -->
 
-      <div class="philosophy-words">
+    <section class="section bg-paper">
 
-        <span>INTENTIONAL</span>
-        <span>THOUGHTFUL</span>
-        <span>SEAMLESS</span>
+      <div class="wrap">
+
+        <p class="eyebrow">OUR PHILOSOPHY</p>
+
+        <h2>A beautiful celebration begins long before the day itself.</h2>
+
+        <div class="split" style="margin-top: 40px;">
+
+          <div class="copy">
+
+            <p>
+              The most memorable weddings are not simply beautiful. They are
+              thoughtfully planned, carefully coordinated, and shaped around
+              the people celebrating.
+            </p>
+
+            <p>
+              DevelopedByK approaches wedding planning as both a creative
+              vision and a strategic process. From the decisions that
+              establish the foundation to the details that bring everything
+              together, each element has a purpose.
+            </p>
+
+            <p>
+              The result is a celebration that feels cohesive, considered,
+              and personal—with the right people and systems in place to
+              support the experience you envisioned.
+            </p>
+
+            <div class="keywords">
+              <span>Intentional</span>
+              <span>Thoughtful</span>
+              <span>Seamless</span>
+            </div>
+
+          </div>
+
+          <div class="media">
+            <img src="assets/img123.png" alt="Thoughtfully styled wedding table">
+          </div>
+
+        </div>
 
       </div>
 
     </section>
-
 
 
     <!-- =======================================================
          PROCESS
     ======================================================== -->
 
-    <section class="process-section">
+    <section class="section bg-white">
 
-      <div class="section-number">
-        03 — THE DBK PROCESS
-      </div>
+      <div class="wrap">
 
-      <div class="process-heading">
+        <p class="eyebrow">THE DBK PROCESS</p>
 
-        <h2>
-          Five stages.
-          <em>One cohesive experience.</em>
-        </h2>
+        <h2>Five stages. One cohesive experience.</h2>
 
-        <p>
-          A structured approach creates clarity at every stage
-          while allowing your celebration to retain its individuality.
+        <p class="section-lead">
+          A structured approach creates clarity at every stage while
+          allowing your celebration to retain its individuality.
         </p>
 
-      </div>
+        <div class="process-grid">
 
+          <article class="process-step">
+            <span>01</span>
+            <h3>Discovery</h3>
+            <p>Understand your vision, priorities, preferences, and expectations.</p>
+          </article>
 
-      <div class="process-grid">
+          <article class="process-step">
+            <span>02</span>
+            <h3>Strategy</h3>
+            <p>Establish a thoughtful foundation for decisions, budget considerations, and planning priorities.</p>
+          </article>
 
-        <article class="process-step">
-          <span>01</span>
-          <h3>Discovery</h3>
-          <p>
-            Understand your vision, priorities, preferences,
-            and expectations.
-          </p>
-        </article>
+          <article class="process-step">
+            <span>03</span>
+            <h3>Design</h3>
+            <p>Bring the aesthetic direction and practical details into a cohesive plan.</p>
+          </article>
 
-        <article class="process-step">
-          <span>02</span>
-          <h3>Strategy</h3>
-          <p>
-            Establish a thoughtful foundation for decisions,
-            budget considerations, and planning priorities.
-          </p>
-        </article>
+          <article class="process-step">
+            <span>04</span>
+            <h3>Coordination</h3>
+            <p>Align vendors, timelines, responsibilities, and logistics ahead of the celebration.</p>
+          </article>
 
-        <article class="process-step">
-          <span>03</span>
-          <h3>Design</h3>
-          <p>
-            Bring the aesthetic direction and practical details
-            into a cohesive plan.
-          </p>
-        </article>
+          <article class="process-step">
+            <span>05</span>
+            <h3>Execution</h3>
+            <p>Bring the plan to life with intentional oversight and coordinated delivery.</p>
+          </article>
 
-        <article class="process-step">
-          <span>04</span>
-          <h3>Coordination</h3>
-          <p>
-            Align vendors, timelines, responsibilities,
-            and logistics ahead of the celebration.
-          </p>
-        </article>
-
-        <article class="process-step">
-          <span>05</span>
-          <h3>Execution</h3>
-          <p>
-            Bring the plan to life with intentional oversight
-            and coordinated delivery.
-          </p>
-        </article>
+        </div>
 
       </div>
 
@@ -543,56 +355,42 @@
          FOUNDER
     ======================================================== -->
 
-    <section class="founder-section">
+    <section class="section bg-ink">
 
-      <div class="section-number">
-        04 — OUR FOUNDER &amp; CEO
-      </div>
+      <div class="wrap">
 
-      <div class="founder-grid">
+        <p class="eyebrow">OUR FOUNDER &amp; CEO</p>
 
-        <div class="founder-copy">
+        <div class="split split-founder">
 
-          <h2>
-            Intentional planning.
-            <em>Thoughtful execution.</em>
-          </h2>
+          <div class="copy">
 
-          <p>
-            DevelopedByK was created around the belief that
-            meaningful celebrations deserve more than a checklist.
-            They deserve a clear strategy, intentional decisions,
-            and coordination that connects every detail to the
-            bigger picture.
-          </p>
+            <h2>Intentional planning. Thoughtful execution.</h2>
 
-          <p>
-            Through a considered, detail-oriented approach, DBK
-            helps clients move from ideas to an organized plan—
-            creating space for a celebration that feels personal
-            rather than prescribed.
-          </p>
+            <p>
+              DevelopedByK was created around the belief that meaningful
+              celebrations deserve more than a checklist. They deserve a
+              clear strategy, intentional decisions, and coordination that
+              connects every detail to the bigger picture.
+            </p>
 
-          <div class="founder-mark">
-            K
+            <p>
+              Through a considered, detail-oriented approach, DBK helps
+              clients move from ideas to an organized plan—creating space
+              for a celebration that feels personal rather than prescribed.
+            </p>
+
+            <p class="signature">K</p>
+
+            <p class="eyebrow" style="margin-bottom: 26px;">FOUNDER | DEVELOPED BY K</p>
+
+            <a href="about.html" class="text-link">LEARN MORE ABOUT DBK →</a>
+
           </div>
 
-          <p class="founder-title">
-            FOUNDER | DEVELOPED BY K
-          </p>
-
-          <a href="about.html" class="text-link">
-            LEARN MORE ABOUT DBK →
-          </a>
-
-        </div>
-
-        <div class="founder-image">
-
-          <img
-            src="assets/founder.jpg"
-            alt="Dr. Kenya Andrews, Founder of DevelopedByK"
-          >
+          <div class="media media-tall media-top">
+            <img src="assets/founder.jpg" alt="Dr. Kenya Andrews, Founder of DevelopedByK">
+          </div>
 
         </div>
 
@@ -605,94 +403,57 @@
          FAQ
     ======================================================== -->
 
-    <section class="faq-section">
+    <section class="section bg-paper">
 
-      <div class="section-number">
-        05 — FREQUENTLY ASKED QUESTIONS
-      </div>
+      <div class="wrap">
 
-      <div class="faq-heading">
+        <p class="eyebrow">FREQUENTLY ASKED QUESTIONS</p>
 
-        <h2>
-          A few things
-          <em>to know.</em>
-        </h2>
+        <h2 style="margin-bottom: 40px;">A few things to know.</h2>
 
-      </div>
+        <div class="faq-list">
 
+          <details>
+            <summary>When should we reach out? <span>+</span></summary>
+            <p>Reach out as early as possible so we can understand your plans and recommend the right level of support.</p>
+          </details>
 
-      <div class="faq-list">
+          <details>
+            <summary>Can we book support for specific needs? <span>+</span></summary>
+            <p>Yes. DBK can tailor support around the pieces of your celebration where you need the most guidance.</p>
+          </details>
 
-        <details>
-          <summary>
-            When should we reach out?
-            <span>+</span>
-          </summary>
+          <details>
+            <summary>How do we get started? <span>+</span></summary>
+            <p>Begin with an inquiry and we will take it from there.</p>
+          </details>
 
-          <p>
-            Reach out as early as possible so we can understand
-            your plans and recommend the right level of support.
-          </p>
-        </details>
-
-
-        <details>
-          <summary>
-            Can we book support for specific needs?
-            <span>+</span>
-          </summary>
-
-          <p>
-            Yes. DBK can tailor support around the pieces of
-            your celebration where you need the most guidance.
-          </p>
-        </details>
-
-
-        <details>
-          <summary>
-            How do we get started?
-            <span>+</span>
-          </summary>
-
-          <p>
-            Begin with an inquiry and we will take it from there.
-          </p>
-        </details>
+        </div>
 
       </div>
 
     </section>
-
 
     <!-- =======================================================
          CTA
     ======================================================== -->
 
-    <section class="cta-section">
+    <section class="cta-band">
 
-      <div class="section-number">
-        06 — BEGIN YOUR EXPERIENCE
-      </div>
+      <p class="eyebrow center">BEGIN YOUR EXPERIENCE</p>
 
-      <h2>
-        Let's develop
-        <em>something extraordinary.</em>
-      </h2>
+      <h2>Let's develop something extraordinary.</h2>
 
-      <p>
-        Tell us what you are envisioning, where you are in the
-        planning process, and how you would like us to support you.
-      </p>
+      <p>Tell us what you are envisioning, where you are in the planning process, and how you would like us to support you.</p>
 
-      <a href="booking.html" class="cta-button">
-        INQUIRE WITH DBK →
+      <a href="booking.html" class="btn">
+        INQUIRE WITH DBK
+        <span>→</span>
       </a>
 
     </section>
 
   </main>
-
 
   <!-- =========================================================
        FOOTER
@@ -702,37 +463,38 @@
 
     <a href="index.html" class="footer-brand">
       <strong>DBK</strong>
-      <span>
-        DEVELOPEDBYK
-      </span>
+      <span>DEVELOPEDBYK</span>
     </a>
 
     <div class="footer-links">
-
-      <a href="about.html">
-        ABOUT
-      </a>
-
-      <a href="booking.html">
-        CONTACT
-      </a>
-
-      <a
-        href="https://www.instagram.com/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        INSTAGRAM
-      </a>
-
+      <a href="about.html">ABOUT</a>
+      <a href="events.html">CLASSICS</a>
+      <a href="booking.html">CONTACT</a>
+      <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">INSTAGRAM</a>
     </div>
 
-    <p>
-      © DEVELOPED BY K
-    </p>
+    <p>© 2026 DEVELOPEDBYK</p>
 
   </footer>
 
+  <!-- =========================================================
+       LIGHTBOX
+  ========================================================== -->
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" aria-hidden="true">
+    <div class="lightbox-stage">
+      <button class="lightbox-close" type="button" aria-label="Close" onclick="closeLightbox()">&times;</button>
+      <button class="lightbox-arrow prev" type="button" aria-label="Previous photo" onclick="prevImage()">&#8249;</button>
+      <div class="lightbox-image-wrap">
+        <img id="lightboxImg" src="" alt="">
+      </div>
+      <button class="lightbox-arrow next" type="button" aria-label="Next photo" onclick="nextImage()">&#8250;</button>
+      <div class="lightbox-caption">
+        <div class="name" id="lightboxName"></div>
+        <div class="counter" id="lightboxCounter"></div>
+      </div>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 

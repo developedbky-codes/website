@@ -1,229 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Classics — DevelopedByK</title>
-<meta name="description" content="A look at weddings and celebrations planned and coordinated by DevelopedByK.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Archivo:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Classics — DevelopedByK</title>
+  <meta name="description" content="A look at weddings and celebrations planned and coordinated by DevelopedByK.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Playfair Display = body text. Noto Serif = Droid Serif's current Google Fonts successor (headings). -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-<header class="site-header">
+  <!-- =========================================================
+       HEADER
+  ========================================================== -->
 
-  <nav class="nav">
+  <header class="site-header">
 
-    <a class="brand" href="index.html">
+    <nav class="nav">
 
-      <span class="brand-mark">
-        <img src="assets/logo.png" alt="DevelopedByK">
-      </span>
+      <a class="brand" href="index.html">
 
-      <span class="brand-copy">
-        <strong>DEVELOPEDBYK</strong>
-        <small>
-          A WEDDING STRATEGY HOUSE SPECIALIZING IN PLANNING &amp; COORDINATION
-        </small>
-      </span>
+        <span class="brand-mark">
+          <img src="assets/logo.png" alt="DevelopedByK">
+        </span>
 
-    </a>
+        <span class="brand-copy">
+          <strong>DEVELOPEDBYK</strong>
+          <small>A WEDDING STRATEGY HOUSE SPECIALIZING IN PLANNING &amp; COORDINATION</small>
+        </span>
 
-
-    <div class="nav-links">
-
-      <a href="index.html">
-        WELCOME
       </a>
 
+      <div class="nav-links">
+        <a href="index.html">WELCOME</a>
+        <a href="index.html#services">SERVICES</a>
+        <a href="about.html">ABOUT</a>
+        <a href="events.html" class="active">CLASSICS</a>
+        <a href="booking.html">INQUIRE</a>
+      </div>
 
-      <a href="about.html">
-        ABOUT
-      </a>
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-label="Open menu"
+        aria-expanded="false"
+        onclick="toggleMobileNav(this)"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
-      <a href="booking.html">
-        INQUIRE
-      </a>
-      <a href="events.html">
-        CLASSICS
-      </a>
+    </nav>
 
+    <div class="mobile-nav" id="mobileNav">
+      <a href="index.html">WELCOME</a>
+      <a href="index.html#services">SERVICES</a>
+      <a href="about.html">ABOUT</a>
+      <a href="events.html" class="active">CLASSICS</a>
+      <a href="booking.html">INQUIRE</a>
     </div>
 
+  </header>
 
-    <button
-      class="nav-toggle"
-      type="button"
-      aria-label="Open menu"
-      aria-expanded="false"
-      onclick="toggleMobileNav(this)"
-    >
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
+  <!-- =========================================================
+       HERO
+  ========================================================== -->
 
-  </nav>
+  <main>
+
+    <section class="page-hero">
+
+      <img src="assets/hero-fabric.png" alt="" aria-hidden="true">
+
+      <div class="page-hero-overlay"></div>
+
+      <div class="page-hero-content">
+
+        <p class="eyebrow">CLASSICS</p>
+
+        <h1>A few DBK classics</h1>
+
+      </div>
+
+    </section>
 
 
-  <div class="mobile-nav" id="mobileNav">
+    <section class="section bg-paper">
 
-      <a href="index.html">
-        WELCOME
-      </a>
+      <div class="wrap">
 
+        <p class="events-intro">
+          A small collection of weddings and celebrations we've had the honor
+          of planning and coordinating. You will notice each event has its
+          own unique identity, fully integrating the client's unique style
+          and choice of vendors. Click any event to step through the day.
+        </p>
 
-      <a href="about.html">
-        ABOUT
-      </a>
-
-      <a href="booking.html">
-        INQUIRE
-      </a>
-      <a href="events.html">
-        CLASSICS
-      </a>
-
-  </div>
-
-</header>
-
-<main>
-
-  <section class="page-banner events-banner">
-    <img src="assets/hero-fabric.png" alt="Flowing champagne-toned silk, softly lit">
-    <div class="page-banner-content">
-      <div class="section-tag"><span class="rule"></span><span>Classics</span></div>
-      <h1>A Few DBK Classics</h1>
-    </div>
-  </section>
-
-  <section>
-    <div class="wrap">
-      <p class="events-intro">A small collection of weddings and celebrations we've had the honor of planning and coordinating. You will notice each event has its own unique identity, fully integrating the client's unique style and choice of vendors. Click any event to step through the day.</p>
-
-      <div class="gallery-grid">
+        <div class="gallery-grid">
 
         <button
+          type="button"
           class="gallery-card"
           data-event="event-4"
           data-name="Martha's Vineyard Picnic: Spelman Alumnae"
           data-images='["assets/events/spelmanmv/1.jpg","assets/events/spelmanmv/2.jpg","assets/events/spelmanmv/3.jpg","assets/events/spelmanmv/4.jpg","assets/events/spelmanmv/5.jpg"]'
           onclick="openLightbox('event-4')"
         >
-          <img src="assets/events/spelmanmv/1.jpg" alt="Martha's Vineyard Picnic: Spelman Alumnae">
+          <span class="gallery-card-img">
+            <img src="assets/events/spelmanmv/1.jpg" alt="Martha's Vineyard Picnic: Spelman Alumnae">
+          </span>
           <span class="gallery-caption">
             <span class="name">Martha's Vineyard Picnic: Spelman Alumnae</span>
-            <p>Full Planning: DBK</p>
+            <span class="detail">Full Planning: DBK</span>
             <span class="meta">Photography: Oak &amp; Lace | Decor: Martha's Vineyard Picnic</span>
           </span>
         </button>
 
         <button
+          type="button"
           class="gallery-card"
           data-event="event-1"
           data-name="K.A. Graduation Party"
           data-images='["assets/events/kagradparty/1.jpg","assets/events/kagradparty/2.jpg","assets/events/kagradparty/3.jpg","assets/events/kagradparty/4.jpg","assets/events/kagradparty/5.jpg"]'
           onclick="openLightbox('event-1')"
         >
-          <img src="assets/events/kagradparty/1.jpg" alt="K.A. Graduation Party">
+          <span class="gallery-card-img">
+            <img src="assets/events/kagradparty/1.jpg" alt="K.A. Graduation Party">
+          </span>
           <span class="gallery-caption">
-            <span class="name">Gradation Party</span>
-            <p>Full Planning: DBK</p>
+            <span class="name">Graduation Party</span>
+            <span class="detail">Full Planning: DBK</span>
             <span class="meta">Photography: Christopher Turner | Decor: Brittany Banks Bell | Catering: Dab's Cafe</span>
           </span>
         </button>
 
         <button
+          type="button"
           class="gallery-card"
           data-event="event-2"
           data-name="1920's Birthday Party"
           data-images='["assets/events/ka20sbday/1.png","assets/events/ka20sbday/2.jpeg","assets/events/ka20sbday/3.jpeg","assets/events/ka20sbday/4.png","assets/events/ka20sbday/5.png"]'
           onclick="openLightbox('event-2')"
         >
-          <img src="assets/events/ka20sbday/1.png" alt="1920's Birthday Party">
+          <span class="gallery-card-img">
+            <img src="assets/events/ka20sbday/1.png" alt="1920's Birthday Party">
+          </span>
           <span class="gallery-caption">
             <span class="name">1920's Birthday Party</span>
-            <p>Full Planning: DBK</p>
+            <span class="detail">Full Planning: DBK</span>
             <span class="meta">Photography: Royal Photography &amp; Walker Visual</span>
           </span>
         </button>
 
         <button
+          type="button"
           class="gallery-card"
           data-event="event-3"
           data-name="Spelman Chicago Founder's Day"
           data-images='["assets/events/spelmanFD/1.jpg","assets/events/spelmanFD/2.jpg","assets/events/spelmanFD/3.jpg","assets/events/spelmanFD/4.jpg","assets/events/spelmanFD/5.jpg"]'
           onclick="openLightbox('event-3')"
         >
-          <img src="assets/events/spelmanFD/1.jpg" alt="Spelman Chicago Founder's Day">
+          <span class="gallery-card-img">
+            <img src="assets/events/spelmanFD/1.jpg" alt="Spelman Chicago Founder's Day">
+          </span>
           <span class="gallery-caption">
             <span class="name">Spelman Chicago Founder's Day</span>
-            <p>Partial Planning &amp; Day of Coordination: DBK</p>
+            <span class="detail">Partial Planning &amp; Day of Coordination: DBK</span>
             <span class="meta">Photography: Crystal Weily-Brown | Decor: Dianne Townsend</span>
           </span>
         </button>
 
-<!--
-        <button
-          class="gallery-card"
-          data-event="event-3"
-          data-name="Simone &amp; Andre"
-          data-images='["assets/events/simone-andre/1.jpg","assets/events/simone-andre/2.jpg","assets/events/simone-andre/3.jpg","assets/events/simone-andre/4.jpg","assets/events/simone-andre/5.jpg"]'
-          onclick="openLightbox('event-3')"
-        >
-          <img src="assets/events/simone-andre/1.jpg" alt="Simone &amp; Andre's wedding">
-          <span class="gallery-caption">
-            <span class="name">Simone &amp; Andre</span>
-            <span class="meta">FULL PLANNING</span>
-          </span>
-        </button> -->
+          <!-- To add another event, copy a card above and give it a new
+               data-event id, data-name, data-images list, and onclick id. -->
+
+        </div>
 
       </div>
-    </div>
-  </section>
 
-  <section class="cta-band">
-    <div class="wrap cta-band-inner">
-      <div>
-        <div class="section-tag" style="margin-bottom:14px;"><span class="rule"></span><span>Ready when you are</span></div>
-        <h2>Let's start with a conversation about your day.</h2>
+    </section>
+
+    <!-- =======================================================
+         CTA
+    ======================================================== -->
+
+    <section class="cta-band">
+
+      <p class="eyebrow center">READY WHEN YOU ARE</p>
+
+      <h2>Let's start with a conversation about your day.</h2>
+
+      <a href="booking.html" class="btn">
+        BEGIN AN INQUIRY
+        <span>→</span>
+      </a>
+
+    </section>
+
+  </main>
+
+  <!-- =========================================================
+       FOOTER
+  ========================================================== -->
+
+  <footer class="site-footer">
+
+    <a href="index.html" class="footer-brand">
+      <strong>DBK</strong>
+      <span>DEVELOPEDBYK</span>
+    </a>
+
+    <div class="footer-links">
+      <a href="about.html">ABOUT</a>
+      <a href="events.html">CLASSICS</a>
+      <a href="booking.html">CONTACT</a>
+      <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">INSTAGRAM</a>
+    </div>
+
+    <p>© 2026 DEVELOPEDBYK</p>
+
+  </footer>
+
+  <!-- =========================================================
+       LIGHTBOX
+  ========================================================== -->
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" aria-hidden="true">
+    <div class="lightbox-stage">
+      <button class="lightbox-close" type="button" aria-label="Close" onclick="closeLightbox()">&times;</button>
+      <button class="lightbox-arrow prev" type="button" aria-label="Previous photo" onclick="prevImage()">&#8249;</button>
+      <div class="lightbox-image-wrap">
+        <img id="lightboxImg" src="" alt="">
       </div>
-      <a class="btn" href="booking.html">Begin an inquiry</a>
-    </div>
-  </section>
-
-</main>
-
-<footer>
-  <span>© 2026 DevelopedByK</span>
-  <nav class="footer-nav">
-    <a href="index.html">Welcome</a>
-    <a href="about.html">About</a>
-    <a href="events.html">Classics</a>
-    <a href="booking.html">Booking</a>
-  </nav>
-</footer>
-
-<!-- LIGHTBOX -->
-<div class="lightbox" id="lightbox">
-  <div class="lightbox-stage">
-    <button class="lightbox-close" aria-label="Close" onclick="closeLightbox()">&times;</button>
-    <button class="lightbox-arrow prev" aria-label="Previous photo" onclick="prevImage()">&#8249;</button>
-    <div class="lightbox-image-wrap">
-      <img id="lightboxImg" src="" alt="">
-    </div>
-    <button class="lightbox-arrow next" aria-label="Next photo" onclick="nextImage()">&#8250;</button>
-    <div class="lightbox-caption">
-      <div class="name" id="lightboxName"></div>
-      <div class="counter" id="lightboxCounter"></div>
+      <button class="lightbox-arrow next" type="button" aria-label="Next photo" onclick="nextImage()">&#8250;</button>
+      <div class="lightbox-caption">
+        <div class="name" id="lightboxName"></div>
+        <div class="counter" id="lightboxCounter"></div>
+      </div>
     </div>
   </div>
-</div>
 
-<script src="script.js"></script>
+  <script src="script.js"></script>
 
 </body>
 </html>
