@@ -254,7 +254,7 @@ p {
   margin-bottom: 20px;
 
   font-family: "Cormorant Garamond", serif;
-  font-size: clamp(58px, 8vw, 105px);
+  font-size: clamp(30px, 8vw, 105px);
   font-weight: 400;
   line-height: .86;
   letter-spacing: -.035em;
@@ -269,7 +269,7 @@ p {
   margin-bottom: 34px;
 
   color: var(--muted);
-  font-size: 15px;
+  font-size: 20px;
   line-height: 1.7;
 }
 
@@ -418,7 +418,7 @@ p {
   background: rgba(43,23,0,.72);
   color: #fff;
 
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1;
 
   cursor: pointer;
@@ -474,7 +474,7 @@ p {
   text-align: center;
 
   color: rgba(251,248,244,.65);
-  font-size: 9px;
+  font-size: 12px;
   letter-spacing: .16em;
 }
 
@@ -670,7 +670,7 @@ p {
 .service-content a {
   align-self: flex-start;
 
-  font-size: 9px;
+  font-size: 12px;
   letter-spacing: .15em;
 }
 
@@ -776,7 +776,7 @@ p {
   margin-bottom: 35px;
 
   font-family: "Cormorant Garamond", serif;
-  font-size: clamp(48px, 5vw, 72px);
+  font-size: clamp(30px, 5vw, 72px);
   font-weight: 400;
   line-height: .93;
 }
@@ -794,7 +794,7 @@ p {
   margin-top: 45px;
 
   font-family: "Cormorant Garamond", serif;
-  font-size: 75px;
+  font-size: 30px;
   line-height: 1;
 }
 
@@ -802,12 +802,12 @@ p {
   margin-bottom: 30px;
 
   color: rgba(251,248,244,.6);
-  font-size: 9px;
+  font-size: 12px;
   letter-spacing: .16em;
 }
 
 .text-link {
-  font-size: 9px;
+  font-size: 12px;
   letter-spacing: .15em;
 }
 
@@ -932,7 +932,7 @@ p {
 
   border: 1px solid var(--ink);
 
-  font-size: 9px;
+  font-size: 12px;
   letter-spacing: .15em;
 
   transition:
@@ -1639,7 +1639,7 @@ body.modal-open {
 .about-principles span {
   color: var(--rose);
 
-  font-size: 9px;
+  font-size: 12px;
   letter-spacing: .14em;
 }
 
@@ -1684,7 +1684,7 @@ body.modal-open {
 
   border: 1px solid rgba(251,248,244,.65);
 
-  font-size: 9px;
+  font-size: 12px;
   letter-spacing: .15em;
 
   transition:
@@ -1878,7 +1878,7 @@ body.modal-open {
   margin: 0;
 
   font-family: "Cormorant Garamond", serif;
-  font-size: clamp(50px, 6vw, 76px);
+  font-size: clamp(30px, 6vw, 76px);
   font-weight: 400;
   line-height: .91;
   letter-spacing: -.025em;
@@ -1902,7 +1902,7 @@ body.modal-open {
 
   color: var(--muted);
 
-  font-size: 15px;
+  font-size: 20px;
   line-height: 1.75;
 }
 
@@ -1960,7 +1960,7 @@ body.modal-open {
   background: transparent;
   color: var(--ink);
 
-  font-size: 9px;
+  font-size: 12px;
   font-weight: 500;
   letter-spacing: .15em;
 
@@ -2135,7 +2135,7 @@ body.modal-open {
 .consultation-fee span {
   color: var(--muted);
 
-  font-size: 9px;
+  font-size: 12px;
   letter-spacing: .15em;
 }
 
@@ -2165,7 +2165,7 @@ body.modal-open {
   background: var(--ink);
   color: var(--paper);
 
-  font-size: 9px;
+  font-size: 12px;
   font-weight: 500;
   letter-spacing: .15em;
 
@@ -2226,7 +2226,7 @@ body.modal-open {
   }
 
   .consultation-modal {
-    padding: 15px;
+    padding: 20px;
   }
 
   .consultation-modal-box {
