@@ -23,9 +23,9 @@ button{font:inherit}
 .nav{max-width:1180px;margin:auto;min-height:78px;padding:14px 28px;display:flex;align-items:center;justify-content:space-between;gap:24px}
 .brand{display:flex;align-items:center;gap:12px}
 .brand-mark {
-  width: 30px;
-  height: 30px;
-  flex: 0 0 30px;
+  width: 50px;
+  height: 50px;
+  flex: 0 0 50px;
 }
 
 .brand-mark img {
@@ -120,7 +120,7 @@ button{font:inherit}
 .signature{font-family:"Cormorant Garamond",serif;font-size:54px;font-style:italic;margin-top:20px}
 .founder-credit{font-size:14px;letter-spacing:.15em;color:var(--muted)}
 .founder-visual{position:relative}
-.founder-visual img{width:100%;height:800px;object-fit:cover}
+.founder-visual img{width:100%;height:700px;object-fit:cover}
 .founder-visual blockquote{position:absolute;bottom:22px;left:22px;margin:0;background:rgba(255,255,255,.88);padding:18px 22px;font-family:"Cormorant Garamond",serif;font-size:30px;line-height:.95}
 .founder-visual small{display:block;font:14px "DM Sans",sans-serif;letter-spacing:.1em;margin-top:12px}
 
