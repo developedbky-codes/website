@@ -4,18 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Booking — DevelopedByK</title>
-
-  <meta
-    name="description"
-    content="Begin an inquiry with DevelopedByK — luxury wedding strategy and coordination."
-  >
+  <title>Inquire — DevelopedByK</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
   <link
-    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Archivo:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@400;500;600&display=swap"
     rel="stylesheet"
   >
 
@@ -24,279 +19,338 @@
 
 <body>
 
-<header class="site-header">
+  <!-- =========================================================
+       HEADER
+  ========================================================== -->
 
-  <nav class="nav">
+  <header class="site-header">
 
-    <a class="brand" href="index.html">
+    <nav class="nav">
 
-      <span class="brand-mark">
-        <img src="assets/logo.png" alt="DevelopedByK">
-      </span>
+      <a class="brand" href="index.html">
 
-      <span class="brand-copy">
-        <strong>DEVELOPEDBYK</strong>
-        <small>
-          A WEDDING STRATEGY HOUSE SPECIALIZING IN PLANNING &amp; COORDINATION
-        </small>
-      </span>
+        <span class="brand-mark">
+          <img src="assets/logo.png" alt="DevelopedByK">
+        </span>
 
-    </a>
+        <span class="brand-copy">
+          <strong>DEVELOPEDBYK</strong>
+          <small>
+            A WEDDING STRATEGY HOUSE SPECIALIZING IN PLANNING &amp; COORDINATION
+          </small>
+        </span>
 
+      </a>
 
-    <div class="nav-links">
+      <div class="nav-links">
 
-      <a href="index.html">WELCOME</a>
+        <a href="index.html">
+          WELCOME
+        </a>
 
-      <a href="events.html">CLASSICS</a>
+        <a href="events.html">
+          CLASSICS
+        </a>
 
-      <a href="about.html">ABOUT</a>
+        <a href="about.html">
+          ABOUT
+        </a>
 
-      <a href="booking.html">INQUIRE</a>
-
-    </div>
-
-
-    <button
-      class="nav-toggle"
-      type="button"
-      aria-label="Open menu"
-      aria-expanded="false"
-      onclick="toggleMobileNav(this)"
-    >
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-
-  </nav>
-
-
-  <div class="mobile-nav" id="mobileNav">
-
-    <a href="index.html">WELCOME</a>
-
-    <a href="events.html">CLASSICS</a>
-
-    <a href="about.html">ABOUT</a>
-
-    <a href="booking.html">INQUIRE</a>
-
-  </div>
-
-</header>
-
-
-<main>
-
-  <!-- ======================================
-       PAGE BANNER
-       ====================================== -->
-
-  <section class="page-banner booking-banner">
-
-    <img
-      src="assets/hero-fabric.png"
-      alt="Flowing champagne-toned silk, softly lit"
-    >
-
-    <div class="page-banner-content">
-
-      <div class="section-tag">
-        <span class="rule"></span>
-        <span>Inquire</span>
-      </div>
-
-      <h1>Begin your inquiry</h1>
-
-    </div>
-
-  </section>
-
-
-  <!-- ======================================
-       TESTIMONIAL
-       ====================================== -->
-
-  <section class="testimonial">
-
-    <div class="wrap">
-
-      <div class="testimonial-inner">
-
-        <blockquote>
-          "Two are better than one, because they have a good return for their labor: If either of them falls down, one can help the other up."
-        </blockquote>
-
-        <cite>— Eph. 4:9-10</cite>
+        <a href="booking.html" class="active">
+          INQUIRE
+        </a>
 
       </div>
 
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-label="Open menu"
+        aria-expanded="false"
+        onclick="toggleMobileNav(this)"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </nav>
+
+    <div class="mobile-nav" id="mobileNav">
+
+      <a href="index.html">
+        WELCOME
+      </a>
+
+      <a href="events.html">
+        CLASSICS
+      </a>
+
+      <a href="about.html">
+        ABOUT
+      </a>
+
+      <a href="booking.html">
+        INQUIRE
+      </a>
+
     </div>
 
-  </section>
+  </header>
 
 
-  <!-- ======================================
-       INQUIRY
-       ====================================== -->
+  <!-- =========================================================
+       INQUIRE HERO
+  ========================================================== -->
 
-  <section class="contact">
+  <main>
 
-    <div class="wrap">
+    <section class="booking-hero">
 
-      <div class="section-head">
+      <img
+        src="assets/hero-fabric.png"
+        alt=""
+        aria-hidden="true"
+      >
 
-        <div class="section-tag">
-          <span class="rule"></span>
-          <span>Tell us about your day</span>
-        </div>
+      <div class="booking-hero-overlay"></div>
+
+      <div class="booking-hero-content">
+
+        <p>
+          TELL US ABOUT YOUR DAY
+        </p>
+
+        <h1>
+          Ready to begin?
+        </h1>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         CONSULTATION INTRO
+    ======================================================== -->
+
+    <section class="booking-intro">
+
+      <div class="booking-intro-number">
+        01 — YOUR NEXT STEP
+      </div>
+
+      <div class="booking-intro-grid">
 
         <div>
-          <h2>Ready to begin?</h2>
+
+          <h2>
+            Your celebration
+            <em>begins with a conversation.</em>
+          </h2>
+
+        </div>
+
+        <div class="booking-copy">
+
+          <p>
+            Let’s start with a consultation to learn more about
+            your vision, understand what matters most to you, and
+            determine how DBK can thoughtfully bring your wedding
+            to life.
+          </p>
+
+          <div class="booking-details">
+
+            <div>
+              <span>EMAIL</span>
+              <a href="mailto:k_andrews@developedbyk.com">
+                k_andrews@developedbyk.com
+              </a>
+            </div>
+
+            <div>
+              <span>TYPICAL RESPONSE TIME</span>
+              <strong>
+                Within 2 Business Days
+              </strong>
+            </div>
+
+            <div>
+              <span>CURRENTLY BOOKING</span>
+              <strong>
+                Select 2027 &amp; 2028 Dates
+              </strong>
+            </div>
+
+          </div>
+
+          <!-- THIS IS THE BUTTON THAT OPENS THE POPUP -->
+
+          <button
+            type="button"
+            class="booking-button"
+            onclick="openConsultationModal()"
+          >
+            BEGIN YOUR INQUIRY
+            <span>→</span>
+          </button>
+
         </div>
 
       </div>
 
+    </section>
 
-      <div class="contact-grid">
-
-        <div class="about-copy">
-
-          <p>
-            Your celebration begins with a conversation.
-          </p>
-
-          <p>
-            Let’s start with a consultation to learn more about your
-            vision, understand what matters most to you, and determine
-            how DBK can thoughtfully bring your wedding to life.
-          </p>
-
-        </div>
+  </main>
 
 
-        <div class="contact-details">
-
-          <div class="contact-detail">
-            <span>Email</span>
-            <span>k_andrews@developedbyk.com</span>
-          </div>
-
-          <div class="contact-detail">
-            <span>Typical Response Time</span>
-            <span>Within 2 Business Days</span>
-          </div>
-
-          <div class="contact-detail">
-            <span>Currently Booking</span>
-            <span>Select 2027 &amp; 2028 Dates</span>
-          </div>
-
-          <div class="consultation-cta">
-
-            <a
-              href="#"
-              class="btn"
-              onclick="openConsultationModal(); return false;"
-            >
-              Begin your inquiry
-            </a>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- ======================================
-       CONSULTATION MODAL
-       ====================================== -->
+  <!-- =========================================================
+       CONSULTATION POPUP
+  ========================================================== -->
 
   <div
-    id="consultationModal"
     class="consultation-modal"
+    id="consultationModal"
     aria-hidden="true"
   >
 
     <div
-      class="consultation-modal-content"
+      class="consultation-modal-box"
       role="dialog"
       aria-modal="true"
       aria-labelledby="consultationTitle"
     >
 
+      <!-- CLOSE -->
+
       <button
         type="button"
-        class="consultation-close"
+        class="consultation-modal-close"
+        aria-label="Close consultation information"
         onclick="closeConsultationModal()"
-        aria-label="Close consultation window"
       >
-        &times;
+        ×
       </button>
 
-      <h2 id="consultationTitle">
-        Before You Book
-      </h2>
 
-      <p>
-        Thank you for your interest in trusting the DevelopedByK team
-        to curate your luxury wedding. We specialize in strategy and
-        coordination. From start to finish, we craft fully tailored
-        experiences that help optimize for your hopes and desires
-        while bringing efficiency and flow to the entire process.
-      </p>
+      <!-- MODAL CONTENT -->
 
-      <p>
-        A $50 consultation fee is required to secure your appointment.
-        Consultations must be completed prior to booking services.
-        This fee will be applied toward your booking fee should you
-        choose to move forward. Booking fees are determined based on
-        the scope and level of service requested.
-      </p>
+      <div class="consultation-modal-content">
 
-      <a
-        href="https://buy.stripe.com/5kQ8wO8jP20i5RU8VKfjG00"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="consultation-button"
-      >
-        Reserve Your Consultation
-      </a>
+        <p class="modal-eyebrow">
+          BEFORE YOU BOOK
+        </p>
+
+        <h2 id="consultationTitle">
+          Let's make sure
+          <em>we're the right fit.</em>
+        </h2>
+
+        <p>
+          Thank you for your interest in trusting the
+          DevelopedByK team to curate your luxury wedding.
+          We specialize in strategy and coordination.
+        </p>
+
+        <p>
+          From start to finish, we craft fully tailored
+          experiences that help optimize for your hopes
+          and desires while bringing efficiency and flow
+          to the entire process.
+        </p>
+
+        <div class="consultation-fee">
+
+          <span>
+            CONSULTATION
+          </span>
+
+          <strong>
+            $50
+          </strong>
+
+        </div>
+
+        <p>
+          A $50 consultation fee is required to secure
+          your appointment. Consultations must be completed
+          prior to booking services.
+        </p>
+
+        <p>
+          This fee will be applied toward your booking fee
+          should you choose to move forward. Booking fees
+          are determined based on the scope and level of
+          service requested.
+        </p>
+
+
+        <!-- STRIPE CONSULTATION LINK -->
+
+        <a
+          href="https://buy.stripe.com/5kQ8wO8jP20i5RU8VKfjG00"
+          class="consultation-button"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          RESERVE YOUR CONSULTATION
+          <span>→</span>
+        </a>
+
+      </div>
 
     </div>
 
   </div>
 
-</main>
+
+  <!-- =========================================================
+       FOOTER
+  ========================================================== -->
+
+  <footer class="site-footer">
+
+    <a href="index.html" class="footer-brand">
+
+      <strong>
+        DBK
+      </strong>
+
+      <span>
+        DEVELOPEDBYK
+      </span>
+
+    </a>
+
+    <div class="footer-links">
+
+      <a href="about.html">
+        ABOUT
+      </a>
+
+      <a href="booking.html">
+        CONTACT
+      </a>
+
+      <a
+        href="https://www.instagram.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        INSTAGRAM
+      </a>
+
+    </div>
+
+    <p>
+      © 2026 DEVELOPEDBYK
+    </p>
+
+  </footer>
 
 
-<!-- ======================================
-     FOOTER
-     ====================================== -->
-
-<footer>
-
-  <span>
-    © 2026 DevelopedByK
-  </span>
-
-  <nav class="footer-nav">
-    <a href="index.html">Welcome</a>
-    <a href="about.html">About</a>
-    <a href="events.html">Classics</a>
-    <a href="booking.html">Booking</a>
-  </nav>
-
-</footer>
-
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 
 </body>
 </html>
