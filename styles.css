@@ -920,9 +920,14 @@ body.home .site-header { border-bottom-color: transparent; }
   align-items: start;
 }
 
+.booking-lead { max-width: 640px; }
+
+.booking-lead h2 { margin-bottom: 22px; }
+
+.booking-lead p { margin: 0; }
+
 .booking-copy { max-width: 600px; }
 
-.booking-copy > p { margin-bottom: 30px; }
 
 .booking-details {
   margin-bottom: 36px;
