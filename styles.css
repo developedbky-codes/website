@@ -1204,3 +1204,9 @@ main > section:not(.page-banner) {
     font-size: 40px;
   }
 }
+
+.page-banner h1 {
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 400;
+}
