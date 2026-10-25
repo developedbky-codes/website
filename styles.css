@@ -22,8 +22,17 @@ button{font:inherit}
 .site-header{background:var(--paper);border-bottom:1px solid var(--line);position:relative;z-index:20}
 .nav{max-width:1180px;margin:auto;min-height:78px;padding:14px 28px;display:flex;align-items:center;justify-content:space-between;gap:24px}
 .brand{display:flex;align-items:center;gap:12px}
-.brand-mark{font-family:"Cormorant Garamond",serif;font-size:31px;line-height:1;font-weight:600;letter-spacing:.04em}
-.brand-copy{display:flex;flex-direction:column;line-height:1.15}
+.brand-mark {
+  width: 10px;
+  height: 10px;
+  flex: 0 0 10px;
+}
+
+.brand-mark img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}.brand-copy{display:flex;flex-direction:column;line-height:1.15}
 .brand-copy strong{font-size:14px;letter-spacing:.18em}
 .brand-copy small{font-size:14px;letter-spacing:.08em;color:var(--muted);margin-top:4px}
 .nav-links{display:flex;gap:28px;align-items:center}
