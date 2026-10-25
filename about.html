@@ -1,171 +1,366 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About — DevelopedByK</title>
-<meta name="description" content="Meet Dr. Kenya Andrews, founder of DevelopedByK, and the philosophy behind the way we plan weddings.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Archivo:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>About — DevelopedByK</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-<header class="site-header">
+  <!-- =========================================================
+       HEADER
+  ========================================================== -->
 
-  <nav class="nav">
+  <header class="site-header">
 
-    <a class="brand" href="index.html">
+    <nav class="nav">
 
-      <span class="brand-mark">
-        <img src="assets/logo.png" alt="DevelopedByK">
-      </span>
+      <a class="brand" href="index.html">
 
-      <span class="brand-copy">
-        <strong>DEVELOPEDBYK</strong>
-        <small>
-          A WEDDING STRATEGY HOUSE SPECIALIZING IN PLANNING &amp; COORDINATION
-        </small>
+        <span class="brand-mark">
+          <img src="assets/logo.png" alt="DevelopedByK">
+        </span>
+
+        <span class="brand-copy">
+          <strong>DEVELOPEDBYK</strong>
+          <small>
+            A WEDDING STRATEGY HOUSE SPECIALIZING IN PLANNING &amp; COORDINATION
+          </small>
+        </span>
+
+      </a>
+
+      <div class="nav-links">
+
+        <a href="index.html">
+          WELCOME
+        </a>
+
+        <a href="events.html">
+          CLASSICS
+        </a>
+
+        <a href="about.html" class="active">
+          ABOUT
+        </a>
+
+        <a href="booking.html">
+          INQUIRE
+        </a>
+
+      </div>
+
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-label="Open menu"
+        aria-expanded="false"
+        onclick="toggleMobileNav(this)"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </nav>
+
+    <div class="mobile-nav" id="mobileNav">
+
+      <a href="index.html">
+        WELCOME
+      </a>
+
+      <a href="events.html">
+        CLASSICS
+      </a>
+
+      <a href="about.html">
+        ABOUT
+      </a>
+
+      <a href="booking.html">
+        INQUIRE
+      </a>
+
+    </div>
+
+  </header>
+
+
+  <!-- =========================================================
+       ABOUT PAGE
+  ========================================================== -->
+
+  <main>
+
+
+    <!-- HERO -->
+
+    <section class="about-hero">
+
+      <img
+        src="assets/hero-fabric.png"
+        alt=""
+        aria-hidden="true"
+      >
+
+      <div class="about-hero-overlay"></div>
+
+      <div class="about-hero-content">
+
+        <p class="about-kicker">
+          ABOUT DEVELOPEDBYK
+        </p>
+
+        <h1>
+          My Story
+        </h1>
+
+      </div>
+
+    </section>
+
+
+  
+
+
+    <!-- =======================================================
+         PHILOSOPHY
+    ======================================================== -->
+
+    <section class="about-philosophy">
+
+      <div class="about-section-number">
+        01 — PHILOSOPHY
+      </div>
+
+
+      <div class="about-philosophy-grid">
+
+
+        <!-- IMAGE -->
+
+        <div class="about-philosophy-image">
+
+          <img
+            src="assets/img123.png"
+            alt="Wedding design detail"
+          >
+
+        </div>
+
+
+        <!-- COPY -->
+
+        <div class="about-philosophy-copy">
+
+          <p class="about-eyebrow">
+            THE DBK APPROACH
+          </p>
+
+          <h2>
+            We plan with intent
+            <em>behind every moment.</em>
+          </h2>
+
+          <p>
+            Behind every beautiful wedding day is a hundred small
+            decisions made correctly and in the right order.
+            That's the part most people don't see, and it's the
+            part we specialize in.
+          </p>
+
+          <p>
+            We start with your hopes for the day, translate them
+            into a real plan — vendors, timeline, budget, logistics —
+            and then coordinate every moving piece so the day itself
+            feels effortless, because the effort already happened.
+          </p>
+
+
+          <div class="about-principles">
+
+            <span>
+              TAILORED TO YOU
+            </span>
+
+            <span>
+              STRUCTURED UNDERNEATH
+            </span>
+
+            <span>
+              BEAUTIFULLY ORCHESTRATED
+            </span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+     <!-- =======================================================
+         FOUNDER
+    ======================================================== -->
+
+    <section class="about-founder">
+
+      <div class="about-section-number">
+        02 — MEET THE FOUNDER
+      </div>
+
+
+      <div class="about-founder-grid">
+
+
+        <!-- PHOTO -->
+
+        <div class="about-founder-photo">
+
+          <img
+            src="assets/2025ProHeadshot.png"
+            alt="Portrait of Dr. Kenya Andrews"
+          >
+
+        </div>
+
+
+        <!-- COPY -->
+
+        <div class="about-founder-copy">
+
+          <p class="about-eyebrow">
+            WEDDING PLANNER &amp; COORDINATOR
+          </p>
+
+          <h2>
+            Dr. Kenya Andrews, PhD
+          </h2>
+
+          <p>
+            Weddings are in our blood! Born and raised in Macon, GA,
+            our CEO, Founder, and Owner, Dr. Kenya Andrews, studied
+            wedding execution from her father, who is a wedding
+            photographer, several bridal consultants, and numerous
+            wedding planners.
+          </p>
+
+          <p>
+            To date, she has assisted with nearly 200 weddings!
+            And yes, she does have a PhD in Computer Science,
+            highly unrelated!
+          </p>
+
+          <p>
+            Dr. Andrews prides herself on being fully transparent,
+            honest, and prepared. She seeks to honor Jesus Christ
+            in all she does, walking faithfully in His love and calling.
+          </p>
+
+          <p>
+            She has been immersed in wedding and event planning for
+            years and hopes to continue her journey by curating your
+            special day, start to finish.
+          </p>
+
+          <div class="about-signature">
+            K
+          </div>
+
+          <p class="about-signature-label">
+            FOUNDER &amp; CEO · DEVELOPEDBYK
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         CTA
+    ======================================================== -->
+
+    <section class="about-cta">
+
+      <p class="about-section-number">
+        03 — READY WHEN YOU ARE
+      </p>
+
+      <h2>
+        Let's start with a conversation
+        <em>about your day.</em>
+      </h2>
+
+      <a href="booking.html" class="about-cta-button">
+        BEGIN AN INQUIRY →
+      </a>
+
+    </section>
+
+  </main>
+
+
+  <!-- =========================================================
+       FOOTER
+  ========================================================== -->
+
+  <footer class="site-footer">
+
+    <a href="index.html" class="footer-brand">
+
+      <strong>
+        DBK
+      </strong>
+
+      <span>
+        DEVELOPEDBYK
       </span>
 
     </a>
 
+    <div class="footer-links">
 
-    <div class="nav-links">
+      <a href="about.html">
+        ABOUT
+      </a>
 
-      <a href="index.html">WELCOME</a>
+      <a href="booking.html">
+        CONTACT
+      </a>
 
-      <a href="events.html">CLASSICS</a>
-
-      <a href="about.html">ABOUT</a>
-
-      <a href="booking.html">INQUIRE</a>
+      <a
+        href="https://www.instagram.com/developedbyk"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        INSTAGRAM
+      </a>
 
     </div>
 
+    <p>
+      © 2026 DEVELOPEDBYK
+    </p>
 
-    <button
-      class="nav-toggle"
-      type="button"
-      aria-label="Open menu"
-      aria-expanded="false"
-      onclick="toggleMobileNav(this)"
-    >
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-
-  </nav>
+  </footer>
 
 
-  <div class="mobile-nav" id="mobileNav">
-
-    <a href="index.html">WELCOME</a>
-
-    <a href="events.html">CLASSICS</a>
-
-    <a href="about.html">ABOUT</a>
-
-    <a href="booking.html">INQUIRE</a>
-
-  </div>
-
-</header>
-
-<main>
-
-  <section class="page-banner about-banner">
-    <img src="assets/hero-fabric.png" alt="Flowing champagne-toned silk, softly lit">
-    <div class="page-banner-content">
-      <div class="section-tag"><span class="rule"></span><span>About</span></div>
-      <h1>Our Philosophy | My Story</h1>
-    </div>
-  </section>
-
-      <section class="philosophy">
-    <div class="wrap">
-      <div class="section-head">
-        <div class="section-tag"><span class="rule"></span><span>Philosophy</span></div>
-      </div>
-
-      <div class="about-grid">
-
-        <img
-          class="blueprint-diagram"
-          src="assets/img123.png"
-          alt="Wedding design detail"
-        >
-
-        <div class="about-copy">
-          <h2 style="margin-bottom:22px;">
-            We plan with intent behind every moment.
-          </h2>
-
-          <p>
-            Behind every beautiful wedding day is a hundred small decisions made correctly and in the right order. That's the part most people don't see, and it's the part we specialize in.
-          </p>
-
-          <p>
-            We start with your hopes for the day, translate them into a real plan — vendors, timeline, budget, logistics — and then coordinate every moving piece so the day itself feels effortless, because the effort already happened.
-          </p>
-
-          <p>
-            Tailored to you | Structured Underneath | Beautifully Orchestrated
-          </p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-    <section>
-      <div class="wrap">
-        <div class="section-head">
-          <div class="section-tag"><span class="rule"></span><span>Meet the founder</span></div>
-          <div>
-            <h2 style="margin-bottom:16px;">Dr. Kenya Andrews, PhD</h2>
-          </div>
-        </div>
-        <div class="founder-grid">
-          <div class="photo-placeholder">
-            <img src="assets/2025ProHeadshot.png" alt="Portrait of Dr. Kenya Andrews">
-            <div class="tick"></div>
-          </div>
-          <div class="about-copy">
-            <p style="color: var(--brass);"><em>Wedding Strategist and Coordinator</em></p>
-            <p>Weddings are in our blood! Born and raised in Macon, GA, our CEO, Founder, and Owner, Dr. Kenya Andrews, studied wedding execution from her father, who is a wedding photographer, several bridal consultants, and numerous wedding planners. To date, she has assisted with nearly 200 weddings! And yes, she does have a PhD in Computer Science, highly unrelated!</p>
-            <p>Dr. Andrews prides herself on being fully transparent, honest, and prepared. She seeks to honor Jesus Christ in all she does, walking faithfully in His love and calling. She has been immersed in wedding and event planning for years and hopes to continue her journey by curating your special day, start to finish.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-  
-
-  <section class="cta-band">
-    <div class="wrap cta-band-inner">
-      <div>
-        <div class="section-tag" style="margin-bottom:14px;"><span class="rule"></span><span>Ready when you are</span></div>
-        <h2>Let's start with a conversation about your day.</h2>
-      </div>
-      <a class="btn" href="booking.html">Begin an inquiry</a>
-    </div>
-  </section>
-
-</main>
-
-<footer>
-  <span>© 2026 DevelopedByK</span>
-  <nav class="footer-nav">
-    <a href="index.html">Welcome</a>
-    <a href="about.html">About</a>
-    <a href="events.html">Classics</a>
-    <a href="booking.html">Booking</a>
-  </nav>
-</footer>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 
 </body>
 </html>
