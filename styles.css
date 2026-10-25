@@ -23,9 +23,9 @@ button{font:inherit}
 .nav{max-width:1180px;margin:auto;min-height:78px;padding:14px 28px;display:flex;align-items:center;justify-content:space-between;gap:24px}
 .brand{display:flex;align-items:center;gap:12px}
 .brand-mark {
-  width: 10px;
-  height: 10px;
-  flex: 0 0 10px;
+  width: 30px;
+  height: 30px;
+  flex: 0 0 30px;
 }
 
 .brand-mark img {
