@@ -172,3 +172,49 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
 });
+
+/* ======================================
+   CONSULTATION MODAL
+   ====================================== */
+
+function openConsultationModal() {
+  const modal = document.getElementById("consultationModal");
+
+  if (!modal) return;
+
+  modal.classList.add("open");
+  modal.setAttribute("aria-hidden", "false");
+  document.body.classList.add("modal-open");
+}
+
+function closeConsultationModal() {
+  const modal = document.getElementById("consultationModal");
+
+  if (!modal) return;
+
+  modal.classList.remove("open");
+  modal.setAttribute("aria-hidden", "true");
+  document.body.classList.remove("modal-open");
+}
+
+
+/* Close when clicking the dark area outside the box */
+
+document.addEventListener("click", function (event) {
+  const modal = document.getElementById("consultationModal");
+
+  if (!modal) return;
+
+  if (event.target === modal) {
+    closeConsultationModal();
+  }
+});
+
+
+/* Close with Escape */
+
+document.addEventListener("keydown", function (event) {
+  if (event.key === "Escape") {
+    closeConsultationModal();
+  }
+});
