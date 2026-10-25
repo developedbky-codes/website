@@ -255,7 +255,7 @@ p {
 
   font-family: "Cormorant Garamond", serif;
   font-size: clamp(30px, 8vw, 105px);
-  font-weight: 400;
+  font-weight: 200;
   line-height: .86;
   letter-spacing: -.035em;
 }
