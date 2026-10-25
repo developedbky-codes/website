@@ -513,7 +513,7 @@ p {
   margin-bottom: 20px;
 
   font-family: "Cormorant Garamond", serif;
-  font-size: clamp(45px, 5vw, 70px);
+  font-size: clamp(38px, 4.5vw, 60px);
   font-weight: 400;
   line-height: .95;
   letter-spacing: -.025em;
@@ -581,7 +581,7 @@ p {
   margin: 0;
 
   font-family: "Cormorant Garamond", serif;
-  font-size: clamp(45px, 5vw, 68px);
+  font-size: clamp(38px, 4.5vw, 60px);
   font-weight: 400;
   line-height: .94;
   letter-spacing: -.025em;
@@ -695,7 +695,7 @@ p {
   margin: 0;
 
   font-family: "Cormorant Garamond", serif;
-  font-size: clamp(20px, 5vw, 68px);
+  font-size: clamp(38px, 4.5vw, 60px);
   font-weight: 400;
   line-height: .94;
 }
@@ -840,7 +840,7 @@ p {
   margin: 0;
 
   font-family: "Cormorant Garamond", serif;
-  font-size: clamp(48px, 5vw, 70px);
+  font-size: clamp(38px, 4.5vw, 60px);
   font-weight: 400;
   line-height: .95;
 }
