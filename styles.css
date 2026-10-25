@@ -1362,3 +1362,879 @@ body.modal-open {
   }
 
 }
+
+/* ============================================================
+   ABOUT PAGE — DBK
+============================================================ */
+
+
+/* ============================================================
+   ABOUT HERO
+============================================================ */
+
+.about-hero {
+  position: relative;
+
+  height: 330px;
+
+  overflow: hidden;
+
+  background: var(--cream);
+}
+
+.about-hero > img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+
+  opacity: .72;
+}
+
+.about-hero-overlay {
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(251,248,244,.55),
+      rgba(251,248,244,.12)
+    );
+}
+
+.about-hero-content {
+  position: absolute;
+  inset: 0;
+
+  width: min(1200px, calc(100% - 56px));
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-kicker {
+  margin-bottom: 12px;
+
+  color: var(--muted);
+
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: .16em;
+}
+
+.about-hero h1 {
+  margin: 0;
+
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(55px, 7vw, 82px);
+  font-weight: 400;
+  line-height: .9;
+  letter-spacing: -.025em;
+}
+
+
+/* ============================================================
+   SHARED ABOUT SECTION NUMBER
+============================================================ */
+
+.about-section-number {
+  margin-bottom: 45px;
+
+  color: var(--muted);
+
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: .14em;
+}
+
+.about-section-number::before {
+  content: "";
+
+  display: inline-block;
+
+  width: 30px;
+  height: 1px;
+
+  margin-right: 10px;
+
+  vertical-align: middle;
+
+  background: currentColor;
+}
+
+
+/* ============================================================
+   FOUNDER
+============================================================ */
+
+.about-founder {
+  padding: 110px max(28px, calc((100vw - 1200px) / 2));
+
+  background: var(--paper);
+}
+
+.about-founder-grid {
+  display: grid;
+
+  grid-template-columns: .82fr 1fr;
+
+  gap: 90px;
+
+  align-items: center;
+}
+
+
+/* PHOTO */
+
+.about-founder-photo {
+  width: 100%;
+  height: 610px;
+
+  overflow: hidden;
+
+  background: var(--cream);
+}
+
+.about-founder-photo img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center top;
+}
+
+
+/* COPY */
+
+.about-founder-copy {
+  max-width: 620px;
+}
+
+.about-eyebrow {
+  margin-bottom: 17px;
+
+  color: var(--rose);
+
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: .15em;
+}
+
+.about-founder-copy h2 {
+  margin-bottom: 35px;
+
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(48px, 5vw, 70px);
+  font-weight: 400;
+  line-height: .94;
+  letter-spacing: -.025em;
+}
+
+.about-founder-copy p:not(.about-eyebrow):not(.about-signature-label) {
+  color: var(--muted);
+
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+.about-signature {
+  margin-top: 38px;
+
+  font-family: "Cormorant Garamond", serif;
+  font-size: 72px;
+  line-height: .8;
+}
+
+.about-signature-label {
+  margin-top: 12px;
+
+  color: var(--muted);
+
+  font-size: 8px;
+  letter-spacing: .15em;
+}
+
+
+/* ============================================================
+   PHILOSOPHY
+============================================================ */
+
+.about-philosophy {
+  padding: 110px max(28px, calc((100vw - 1200px) / 2));
+
+  background: var(--cream);
+}
+
+.about-philosophy-grid {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 90px;
+
+  align-items: center;
+}
+
+
+/* IMAGE */
+
+.about-philosophy-image {
+  width: 100%;
+  height: 570px;
+
+  overflow: hidden;
+}
+
+.about-philosophy-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+
+/* COPY */
+
+.about-philosophy-copy {
+  max-width: 610px;
+}
+
+.about-philosophy-copy h2 {
+  margin-bottom: 35px;
+
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(48px, 5vw, 72px);
+  font-weight: 400;
+  line-height: .92;
+  letter-spacing: -.025em;
+}
+
+.about-philosophy-copy h2 em {
+  display: block;
+}
+
+.about-philosophy-copy > p:not(.about-eyebrow) {
+  color: var(--muted);
+
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+
+/* PRINCIPLES */
+
+.about-principles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 25px;
+
+  margin-top: 38px;
+}
+
+.about-principles span {
+  color: var(--rose);
+
+  font-size: 9px;
+  letter-spacing: .14em;
+}
+
+
+/* ============================================================
+   ABOUT CTA
+============================================================ */
+
+.about-cta {
+  padding: 115px 28px 125px;
+
+  text-align: center;
+
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.about-cta .about-section-number {
+  color: rgba(251,248,244,.6);
+}
+
+.about-cta h2 {
+  max-width: 850px;
+
+  margin: 0 auto 38px;
+
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(52px, 7vw, 90px);
+  font-weight: 400;
+  line-height: .88;
+  letter-spacing: -.03em;
+}
+
+.about-cta h2 em {
+  display: block;
+}
+
+.about-cta-button {
+  display: inline-block;
+
+  padding: 15px 25px;
+
+  border: 1px solid rgba(251,248,244,.65);
+
+  font-size: 9px;
+  letter-spacing: .15em;
+
+  transition:
+    background .2s ease,
+    color .2s ease;
+}
+
+.about-cta-button:hover {
+  background: var(--paper);
+  color: var(--ink);
+}
+
+
+/* ============================================================
+   ABOUT RESPONSIVE
+============================================================ */
+
+@media (max-width: 900px) {
+
+  .about-founder-grid,
+  .about-philosophy-grid {
+    grid-template-columns: 1fr;
+
+    gap: 55px;
+  }
+
+  .about-founder-photo {
+    height: 540px;
+  }
+
+  .about-philosophy-image {
+    height: 470px;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .about-hero {
+    height: 260px;
+  }
+
+  .about-hero-content {
+    width: calc(100% - 32px);
+  }
+
+  .about-founder,
+  .about-philosophy {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .about-founder-photo {
+    height: 440px;
+  }
+
+  .about-philosophy-image {
+    height: 380px;
+  }
+
+  .about-cta {
+    padding-top: 85px;
+    padding-bottom: 90px;
+  }
+
+}
+
+/* ============================================================
+   INQUIRE / BOOKING PAGE
+============================================================ */
+
+
+/* ============================================================
+   BOOKING HERO
+============================================================ */
+
+.booking-hero {
+  position: relative;
+
+  height: 330px;
+
+  overflow: hidden;
+
+  background: var(--cream);
+}
+
+.booking-hero > img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+
+  opacity: .72;
+}
+
+.booking-hero-overlay {
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(251,248,244,.60),
+      rgba(251,248,244,.12)
+    );
+}
+
+.booking-hero-content {
+  position: absolute;
+  inset: 0;
+
+  width: min(1200px, calc(100% - 56px));
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.booking-hero-content p {
+  margin-bottom: 12px;
+
+  color: var(--muted);
+
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: .16em;
+}
+
+.booking-hero-content h1 {
+  margin: 0;
+
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(55px, 7vw, 82px);
+  font-weight: 400;
+  line-height: .9;
+  letter-spacing: -.025em;
+}
+
+
+/* ============================================================
+   BOOKING INTRO
+============================================================ */
+
+.booking-intro {
+  padding: 110px max(28px, calc((100vw - 1200px) / 2));
+
+  background: var(--paper);
+}
+
+.booking-intro-number {
+  margin-bottom: 50px;
+
+  color: var(--muted);
+
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: .14em;
+}
+
+.booking-intro-number::before {
+  content: "";
+
+  display: inline-block;
+
+  width: 30px;
+  height: 1px;
+
+  margin-right: 10px;
+
+  vertical-align: middle;
+
+  background: currentColor;
+}
+
+.booking-intro-grid {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 100px;
+
+  align-items: start;
+}
+
+.booking-intro-grid h2 {
+  max-width: 650px;
+
+  margin: 0;
+
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(50px, 6vw, 76px);
+  font-weight: 400;
+  line-height: .91;
+  letter-spacing: -.025em;
+}
+
+.booking-intro-grid h2 em {
+  display: block;
+}
+
+
+/* ============================================================
+   BOOKING COPY
+============================================================ */
+
+.booking-copy {
+  max-width: 560px;
+}
+
+.booking-copy > p {
+  margin-bottom: 38px;
+
+  color: var(--muted);
+
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+
+/* ============================================================
+   BOOKING DETAILS
+============================================================ */
+
+.booking-details {
+  margin-bottom: 40px;
+
+  border-top: 1px solid var(--line);
+}
+
+.booking-details > div {
+  padding: 17px 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  border-bottom: 1px solid var(--line);
+}
+
+.booking-details span {
+  color: var(--rose);
+
+  font-size: 8px;
+  font-weight: 500;
+  letter-spacing: .15em;
+}
+
+.booking-details strong,
+.booking-details a {
+  color: var(--ink);
+
+  font-size: 12px;
+  font-weight: 400;
+}
+
+
+/* ============================================================
+   BEGIN INQUIRY BUTTON
+============================================================ */
+
+.booking-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 18px;
+
+  padding: 16px 24px;
+
+  border: 1px solid var(--ink);
+
+  background: transparent;
+  color: var(--ink);
+
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: .15em;
+
+  cursor: pointer;
+
+  transition:
+    background .2s ease,
+    color .2s ease;
+}
+
+.booking-button span {
+  font-size: 17px;
+  line-height: 1;
+}
+
+.booking-button:hover {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+
+/* ============================================================
+   CONSULTATION MODAL
+============================================================ */
+
+.consultation-modal {
+  position: fixed;
+
+  inset: 0;
+
+  z-index: 99999;
+
+  display: none;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 25px;
+
+  background: rgba(43, 23, 0, .78);
+
+  opacity: 0;
+
+  transition: opacity .2s ease;
+}
+
+.consultation-modal.open {
+  display: flex;
+
+  opacity: 1;
+}
+
+
+/* ============================================================
+   MODAL BOX
+============================================================ */
+
+.consultation-modal-box {
+  position: relative;
+
+  width: min(650px, 100%);
+
+  max-height: calc(100vh - 50px);
+
+  overflow-y: auto;
+
+  background: var(--paper);
+
+  box-shadow: 0 25px 80px rgba(0,0,0,.25);
+}
+
+
+/* ============================================================
+   CLOSE BUTTON
+============================================================ */
+
+.consultation-modal-close {
+  position: absolute;
+
+  top: 16px;
+  right: 16px;
+
+  z-index: 2;
+
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+
+  border: 1px solid var(--line);
+
+  background: var(--paper);
+  color: var(--ink);
+
+  font-size: 25px;
+  font-weight: 300;
+
+  line-height: 1;
+
+  cursor: pointer;
+}
+
+.consultation-modal-close:hover {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+
+/* ============================================================
+   MODAL CONTENT
+============================================================ */
+
+.consultation-modal-content {
+  padding: 60px 60px 55px;
+}
+
+.modal-eyebrow {
+  margin-bottom: 18px;
+
+  color: var(--rose);
+
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: .16em;
+}
+
+.consultation-modal-content h2 {
+  margin-bottom: 30px;
+
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(45px, 6vw, 65px);
+  font-weight: 400;
+  line-height: .92;
+  letter-spacing: -.025em;
+}
+
+.consultation-modal-content h2 em {
+  display: block;
+}
+
+.consultation-modal-content > p:not(.modal-eyebrow) {
+  margin-bottom: 17px;
+
+  color: var(--muted);
+
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+
+/* ============================================================
+   CONSULTATION FEE
+============================================================ */
+
+.consultation-fee {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+
+  margin: 30px 0;
+
+  padding: 20px 0;
+
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.consultation-fee span {
+  color: var(--muted);
+
+  font-size: 9px;
+  letter-spacing: .15em;
+}
+
+.consultation-fee strong {
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: 38px;
+  font-weight: 400;
+}
+
+
+/* ============================================================
+   STRIPE CONSULTATION BUTTON
+============================================================ */
+
+.consultation-button {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 30px;
+
+  padding: 18px 22px;
+
+  background: var(--ink);
+  color: var(--paper);
+
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: .15em;
+
+  transition: background .2s ease;
+}
+
+.consultation-button:hover {
+  background: #492900;
+}
+
+.consultation-button span {
+  font-size: 18px;
+  line-height: 1;
+}
+
+
+/* ============================================================
+   LOCK PAGE WHEN MODAL IS OPEN
+============================================================ */
+
+body.modal-open {
+  overflow: hidden;
+}
+
+
+/* ============================================================
+   BOOKING MOBILE
+============================================================ */
+
+@media (max-width: 800px) {
+
+  .booking-intro-grid {
+    grid-template-columns: 1fr;
+
+    gap: 45px;
+  }
+
+  .booking-copy {
+    max-width: none;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .booking-hero {
+    height: 260px;
+  }
+
+  .booking-hero-content {
+    width: calc(100% - 32px);
+  }
+
+  .booking-intro {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .consultation-modal {
+    padding: 15px;
+  }
+
+  .consultation-modal-box {
+    max-height: calc(100vh - 30px);
+  }
+
+  .consultation-modal-content {
+    padding: 50px 25px 30px;
+  }
+
+}
