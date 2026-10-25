@@ -1,8 +1,8 @@
 /* ============================================================
    DEVELOPEDBYK — MASTER STYLESHEET
    Palette : #FFFFFF  #2B1700  #FBF8F4  #F4EEE7   Accent: #BF9000
-   Type    : Droid Serif (h1/h2/h3)  ·  Playfair Display (body)
-   Scale   : headings/subtitles max 20px · body 14px · eyebrows 12px
+   Type    : Droid Serif (h1/h2/h3)  ·  Lora (body)
+   Scale   : headings/subtitles max 20px · body 16px · eyebrows 12px
 ============================================================ */
 
 
@@ -21,10 +21,10 @@
   /* Droid Serif is no longer hosted by Google Fonts; Noto Serif is its
      direct successor and loads in its place. */
   --font-head: "Droid Serif", "Noto Serif", Georgia, serif;
-  --font-body: "Playfair Display", Georgia, serif;
+  --font-body: "Lora", Georgia, serif;
 
   --size-head: 20px;
-  --size-body: 14px;
+  --size-body: 16px;
   --size-eyebrow: 12px;
 
   --wrap: min(1200px, calc(100% - 56px));
@@ -45,7 +45,7 @@ body {
   color: var(--ink);
   font-family: var(--font-body);
   font-size: var(--size-body);
-  line-height: 1.8;
+  line-height: 1.75;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -92,8 +92,8 @@ body.modal-open { overflow: hidden; }
 .bg-ink p { color: rgba(251, 248, 244, .86); }
 
 /* Headings stay on one line on wide screens */
-@media (min-width: 1000px) {
-  h1, h2, .subtitle { white-space: nowrap; }
+@media (min-width: 1100px) {
+  h1, h2, .subtitle, .hero-text { white-space: nowrap; }
 }
 
 .subtitle {
@@ -329,12 +329,47 @@ body.modal-open { overflow: hidden; }
   justify-content: center;
 }
 
-.page-hero-content h1 { margin: 0; }
+.page-hero-content h1,
+.hero h1 {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+}
 
 .page-hero-content .hero-text {
   max-width: 640px;
   margin: 16px 0 0;
 }
+
+
+/* ============================================================
+   HOME HERO  (original tall hero, single-line text)
+============================================================ */
+
+.hero {
+  min-height: 610px;
+  display: flex;
+  align-items: center;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(251, 248, 244, .96) 0%,
+      rgba(251, 248, 244, .88) 48%,
+      rgba(251, 248, 244, .45) 100%
+    ),
+    url("assets/hero-fabric.png") center center / cover no-repeat;
+}
+
+.hero-content {
+  width: var(--wrap);
+  margin: 0 auto;
+  padding: 90px 0;
+}
+
+.hero h1 { margin-bottom: 20px; }
+
+.hero-text { max-width: none; margin: 0 0 32px; }
 
 
 /* ============================================================
@@ -394,7 +429,7 @@ body.modal-open { overflow: hidden; }
 .aesthetic-section .wrap { margin-bottom: 36px; }
 
 .aesthetic-section h2,
-.aesthetic-section .subtitle { margin: 0; color: var(--paper); }
+.aesthetic-section .subtitle { margin: 0; }
 
 .gallery {
   position: relative;
@@ -417,7 +452,7 @@ body.modal-open { overflow: hidden; }
   overflow: hidden;
 
   border: 0;
-  background: rgba(251, 248, 244, .08);
+  background: rgba(43, 23, 0, .06);
   cursor: zoom-in;
 }
 
@@ -444,10 +479,10 @@ body.modal-open { overflow: hidden; }
   align-items: center;
   justify-content: center;
 
-  border: 1px solid rgba(251, 248, 244, .6);
+  border: 1px solid rgba(43, 23, 0, .45);
   border-radius: 50%;
-  background: rgba(43, 23, 0, .72);
-  color: var(--paper);
+  background: rgba(251, 248, 244, .9);
+  color: var(--ink);
 
   font-size: 18px;
   line-height: 1;
@@ -457,7 +492,7 @@ body.modal-open { overflow: hidden; }
   transition: background .2s ease, border-color .2s ease;
 }
 
-.gallery-arrow:hover { background: var(--gold); border-color: var(--gold); }
+.gallery-arrow:hover { background: var(--gold); border-color: var(--gold); color: var(--white); }
 
 .gallery-arrow.prev { left: 4px; }
 .gallery-arrow.next { right: 4px; }
@@ -472,7 +507,7 @@ body.modal-open { overflow: hidden; }
 .gallery-dots span {
   width: 7px;
   height: 7px;
-  border: 1px solid rgba(251, 248, 244, .8);
+  border: 1px solid var(--ink);
   border-radius: 50%;
 }
 
@@ -486,7 +521,6 @@ body.modal-open { overflow: hidden; }
 
   margin: 20px 0 0;
 
-  color: rgba(251, 248, 244, .75);
   font-size: var(--size-eyebrow);
   letter-spacing: .16em;
   text-transform: uppercase;
@@ -513,6 +547,7 @@ body.modal-open { overflow: hidden; }
 
 .service-card {
   min-width: 0;
+  color: var(--ink);
   display: flex;
   flex-direction: column;
   background: var(--white);
@@ -532,6 +567,8 @@ body.modal-open { overflow: hidden; }
 }
 
 .service-card:hover .service-image img { transform: scale(1.04); }
+
+.bg-ink .service-card p { color: var(--ink); }
 
 .service-content {
   display: flex;
@@ -582,6 +619,29 @@ body.modal-open { overflow: hidden; }
 }
 
 .media-top img { object-position: center 25%; }
+
+/* Home page founder: smaller, cropped closer to the head, more of the lower photo */
+.media-founder {
+  width: 100%;
+  max-width: 420px;
+  height: 460px;
+  justify-self: center;
+}
+
+.media-founder img { object-position: center 78%; }
+
+/* About page founder: shown whole, so the top of the head is never cut off */
+.media-portrait {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  justify-self: center;
+}
+
+.media-portrait img {
+  height: auto;
+  object-fit: contain;
+}
 
 .copy { max-width: 600px; }
 
@@ -772,7 +832,13 @@ body.modal-open { overflow: hidden; }
    BOOKING PAGE
 ============================================================ */
 
-.booking-copy { max-width: 640px; }
+.split-booking {
+  grid-template-columns: 1.15fr 1fr;
+  gap: 70px;
+  align-items: start;
+}
+
+.booking-copy { max-width: 600px; }
 
 .booking-copy > p { margin-bottom: 30px; }
 
@@ -956,7 +1022,7 @@ body.modal-open { overflow: hidden; }
   line-height: 1.7;
 }
 
-.gallery-caption .meta { margin-top: 4px; opacity: .75; }
+.gallery-caption .meta { margin-top: 4px; font-size: 14px; opacity: .75; }
 
 .gallery-card:hover .gallery-caption .name {
   text-decoration: underline;
@@ -1111,6 +1177,7 @@ body.modal-open { overflow: hidden; }
 
   .split,
   .split-founder,
+  .split-booking,
   .split-image-first {
     grid-template-columns: 1fr;
     gap: 40px;
@@ -1118,6 +1185,10 @@ body.modal-open { overflow: hidden; }
 
   .media,
   .media-tall { height: 440px; }
+
+  .media-founder { height: 440px; }
+
+  .media-portrait { height: auto; }
 
   .gallery-grid { gap: 32px 22px; }
 
@@ -1175,6 +1246,10 @@ body.modal-open { overflow: hidden; }
 
   .media,
   .media-tall { height: 360px; }
+
+  .media-founder { height: 400px; }
+
+  .media-portrait { height: auto; }
 
   .cta-band { padding: 70px 20px 76px; }
 
