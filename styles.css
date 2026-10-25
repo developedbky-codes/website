@@ -2369,3 +2369,81 @@ body.modal-open {
   line-height: 0.95;
   letter-spacing: -0.04em;
 }
+
+
+/* CLASSICS — EDITORIAL GALLERY */
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 42px 30px;
+  width: min(100% - 64px, 1180px);
+  margin-inline: auto;
+}
+
+.gallery-card {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #2B1700;
+  text-align: left;
+  cursor: pointer;
+}
+
+.gallery-card > img {
+  display: block;
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  object-position: center;
+  transition: opacity 0.3s ease;
+}
+
+.gallery-card:hover > img {
+  opacity: 0.92;
+}
+
+.gallery-caption {
+  display: block;
+  padding: 16px 0 0;
+}
+
+.gallery-caption .name {
+  display: block;
+  margin: 0 0 10px;
+  font-family: "Fraunces", serif;
+  font-size: clamp(20px, 2vw, 26px);
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+.gallery-caption p {
+  margin: 0 0 6px;
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+.gallery-caption .meta {
+  display: block;
+  color: #766C66;
+  font-size: 10px;
+  line-height: 1.8;
+  letter-spacing: 0.08em;
+}
+
+@media (max-width: 700px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    width: calc(100% - 40px);
+    gap: 30px;
+  }
+
+  .gallery-card > img {
+    height: auto;
+    aspect-ratio: 4 / 3;
+  }
+}
+
