@@ -80,6 +80,8 @@ body.modal-open { overflow: hidden; }
   margin: 0 auto;
 }
 
+.wrap-wide { width: min(1320px, calc(100% - 56px)); margin: 0 auto; }
+
 /* Section scaffolding */
 
 .section { padding: 90px 0; }
@@ -142,6 +144,13 @@ body.modal-open { overflow: hidden; }
 }
 
 .eyebrow.center { justify-content: center; }
+
+.eyebrow.center::after {
+  content: "";
+  flex: 0 0 30px;
+  height: 1px;
+  background: var(--gold);
+}
 
 
 /* ============================================================
@@ -364,6 +373,76 @@ body.modal-open { overflow: hidden; }
 
 
 /* ============================================================
+   LUXURY HERO  (home page: centred, framed, slow settle)
+============================================================ */
+
+.page-hero--lux { min-height: 370px; }
+
+.page-hero--lux > img {
+  object-position: center 45%;
+  opacity: .95;
+  animation: hero-settle 2.6s cubic-bezier(.2, .6, .2, 1) both;
+}
+
+@keyframes hero-settle {
+  from { opacity: 0; transform: scale(1.07); }
+  to   { opacity: .95; transform: scale(1); }
+}
+
+/* a soft cream pool behind the type; the folds and gold thread
+   stay visible toward the edges */
+.page-hero--lux .page-hero-overlay {
+  background: radial-gradient(
+    ellipse 62% 95% at 50% 50%,
+    rgba(251, 248, 244, .86) 0%,
+    rgba(251, 248, 244, .62) 55%,
+    rgba(251, 248, 244, .12) 100%
+  );
+}
+
+/* fine gold keyline set inside the banner */
+.page-hero--lux::after {
+  content: "";
+  position: absolute;
+  inset: 18px;
+  z-index: 3;
+  border: 1px solid rgba(191, 144, 0, .6);
+  pointer-events: none;
+}
+
+.page-hero--lux .page-hero-content {
+  align-items: center;
+  text-align: center;
+  padding: 70px 0;
+}
+
+.page-hero--lux h1 { letter-spacing: .2em; }
+
+.page-hero--lux .hero-text { margin: 0 auto 30px; max-width: 760px; }
+
+/* gold hairline with a small diamond */
+.lux-divider {
+  position: relative;
+  width: 90px;
+  height: 1px;
+  margin: 22px 0 22px;
+  background: var(--gold);
+}
+
+.lux-divider::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 7px;
+  height: 7px;
+  background: var(--paper);
+  border: 1px solid var(--gold);
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+
+/* ============================================================
    BUTTONS & LINKS
 ============================================================ */
 
@@ -531,8 +610,8 @@ body.modal-open { overflow: hidden; }
 
 .service-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 24px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
   align-items: stretch;
 }
 
@@ -546,7 +625,7 @@ body.modal-open { overflow: hidden; }
 
 .service-image {
   width: 100%;
-  height: 260px;
+  height: 220px;
   overflow: hidden;
 }
 
@@ -565,7 +644,7 @@ body.modal-open { overflow: hidden; }
   display: flex;
   flex: 1;
   flex-direction: column;
-  padding: 26px 24px 28px;
+  padding: 26px 22px 28px;
 }
 
 .service-content h3 { margin-bottom: 14px; }
@@ -699,6 +778,8 @@ body.modal-open { overflow: hidden; }
   border-top: 1px solid var(--gold);
 }
 
+.bg-ink .process-step { border-color: rgba(251, 248, 244, .22); }
+
 .process-step {
   min-height: 230px;
   padding: 26px 22px 26px 0;
@@ -710,7 +791,7 @@ body.modal-open { overflow: hidden; }
 .process-step:last-child { border-right: 0; }
 
 .process-step > span {
-  color: var(--ink);
+  color: var(--gold);
   font-family: var(--font-head);
   font-size: 16px;
   font-weight: 500;
@@ -1138,6 +1219,8 @@ body.modal-open { overflow: hidden; }
 
 @media (max-width: 1100px) {
 
+  .service-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
   .nav { min-height: 78px; }
 
   .nav-links { display: none; }
@@ -1148,7 +1231,7 @@ body.modal-open { overflow: hidden; }
 
   .process-step:nth-child(3) { border-right: 0; }
 
-  .process-step:nth-child(n + 4) { border-top: 1px solid var(--line); }
+  .process-step:nth-child(n + 4) { border-top: 1px solid rgba(251, 248, 244, .22); }
 
   .gallery { padding: 0 52px; }
 
@@ -1193,6 +1276,8 @@ body.modal-open { overflow: hidden; }
 
   :root { --wrap: calc(100% - 32px); }
 
+  .wrap-wide { width: calc(100% - 32px); }
+
   .section { padding: 64px 0; }
 
   .brand-copy small { display: none; }
@@ -1204,6 +1289,14 @@ body.modal-open { overflow: hidden; }
   .page-hero { min-height: 200px; }
 
   .page-hero-content { padding: 32px 0; }
+
+  .page-hero--lux { min-height: 360px; }
+
+  .page-hero--lux::after { inset: 10px; }
+
+  .page-hero--lux .page-hero-content { padding: 56px 0; }
+
+  .page-hero--lux h1 { letter-spacing: .12em; }
 
   .section-lead { margin-bottom: 36px; }
 
@@ -1275,6 +1368,8 @@ body.modal-open { overflow: hidden; }
 @media (prefers-reduced-motion: reduce) {
 
   html { scroll-behavior: auto; }
+
+  .page-hero > img { animation: none !important; }
 
   *,
   *::before,
