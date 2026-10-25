@@ -285,17 +285,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
-
 /* ============================================================
    CONSULTATION MODAL
 ============================================================ */
 
 function openConsultationModal() {
 
-  const modal =
-    document.getElementById("consultationModal");
+  const modal = document.getElementById("consultationModal");
 
   if (!modal) {
+    console.error("Consultation modal not found.");
     return;
   }
 
@@ -313,8 +312,7 @@ function openConsultationModal() {
 
 function closeConsultationModal() {
 
-  const modal =
-    document.getElementById("consultationModal");
+  const modal = document.getElementById("consultationModal");
 
   if (!modal) {
     return;
@@ -332,9 +330,9 @@ function closeConsultationModal() {
 }
 
 
-/*
-  Close modal when clicking outside the modal content.
-*/
+/* ============================================================
+   CLOSE WHEN CLICKING OUTSIDE MODAL
+============================================================ */
 
 document.addEventListener("click", function (event) {
 
@@ -352,9 +350,9 @@ document.addEventListener("click", function (event) {
 });
 
 
-/*
-  Close modal with Escape.
-*/
+/* ============================================================
+   CLOSE WITH ESCAPE
+============================================================ */
 
 document.addEventListener("keydown", function (event) {
 
