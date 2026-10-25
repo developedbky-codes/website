@@ -524,7 +524,7 @@ button {
 .founder-grid {
   display: grid;
   grid-template-columns: 1fr .75fr;
-  gap: 60px;
+  gap: 30px;
   align-items: center;
 }
 
@@ -538,9 +538,9 @@ button {
 
 .signature {
   font-family: "Cormorant Garamond", serif;
-  font-size: 54px;
+  font-size: 30px;
   font-style: italic;
-  margin-top: 20px;
+  margin-top: 5px;
 }
 
 .founder-credit {
