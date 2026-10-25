@@ -2,7 +2,7 @@
    DEVELOPEDBYK — MASTER STYLESHEET
    Palette : #FFFFFF  #2B1700  #FBF8F4  #F4EEE7   Accent: #BF9000
    Type    : Droid Serif (h1/h2/h3)  ·  Lora (body)
-   Scale   : headings/subtitles max 20px · body 16px · eyebrows 12px
+   Scale   : headings/subtitles max 20px · body 18px · eyebrows 12px
 ============================================================ */
 
 
@@ -24,7 +24,7 @@
   --font-body: "Lora", Georgia, serif;
 
   --size-head: 20px;
-  --size-body: 16px;
+  --size-body: 18px;
   --size-eyebrow: 12px;
 
   --wrap: min(1200px, calc(100% - 56px));
@@ -89,11 +89,15 @@ body.modal-open { overflow: hidden; }
 .bg-cream { background: var(--cream); }
 .bg-ink   { background: var(--ink); color: var(--paper); }
 
-.bg-ink p { color: rgba(251, 248, 244, .86); }
+.bg-ink p { color: var(--paper); }
 
 /* Headings stay on one line on wide screens */
 @media (min-width: 1100px) {
-  h1, h2, .subtitle, .hero-text { white-space: nowrap; }
+  h1, h2, .subtitle { white-space: nowrap; }
+}
+
+@media (min-width: 1200px) {
+  .page-hero .page-hero-content .hero-text { max-width: none; white-space: nowrap; }
 }
 
 .subtitle {
@@ -287,7 +291,7 @@ body.modal-open { overflow: hidden; }
 
 .page-hero {
   position: relative;
-  min-height: 330px;
+  min-height: 230px;
   display: flex;
   overflow: hidden;
   background: var(--cream);
@@ -301,19 +305,37 @@ body.modal-open { overflow: hidden; }
   height: 100%;
 
   object-fit: cover;
-  object-position: center;
+  object-position: center 40%;
   opacity: .72;
+
+  animation: hero-fade 1.1s ease-out both;
 }
 
+@keyframes hero-fade {
+  from { opacity: 0; }
+  to   { opacity: .72; }
+}
+
+/* soft left-to-right wash plus a gentle top/bottom blend so the
+   banner melts into the header and the section below it */
 .page-hero-overlay {
   position: absolute;
   inset: 0;
 
-  background: linear-gradient(
-    90deg,
-    rgba(251, 248, 244, .60),
-    rgba(251, 248, 244, .12)
-  );
+  background:
+    linear-gradient(
+      180deg,
+      rgba(251, 248, 244, .45) 0%,
+      rgba(251, 248, 244, 0) 30%,
+      rgba(251, 248, 244, 0) 70%,
+      rgba(251, 248, 244, .30) 100%
+    ),
+    linear-gradient(
+      90deg,
+      rgba(251, 248, 244, .62) 0%,
+      rgba(251, 248, 244, .30) 55%,
+      rgba(251, 248, 244, .08) 100%
+    );
 }
 
 .page-hero-content {
@@ -322,54 +344,23 @@ body.modal-open { overflow: hidden; }
 
   width: var(--wrap);
   margin: auto;
-  padding: 56px 0;
+  padding: 40px 0;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.page-hero-content h1,
-.hero h1 {
+.page-hero-content h1 {
   margin: 0;
   text-transform: uppercase;
   letter-spacing: .06em;
 }
 
 .page-hero-content .hero-text {
-  max-width: 640px;
-  margin: 16px 0 0;
+  max-width: 760px;
+  margin: 14px 0 0;
 }
-
-
-/* ============================================================
-   HOME HERO  (original tall hero, single-line text)
-============================================================ */
-
-.hero {
-  min-height: 610px;
-  display: flex;
-  align-items: center;
-
-  background:
-    linear-gradient(
-      90deg,
-      rgba(251, 248, 244, .96) 0%,
-      rgba(251, 248, 244, .88) 48%,
-      rgba(251, 248, 244, .45) 100%
-    ),
-    url("assets/hero-fabric.png") center center / cover no-repeat;
-}
-
-.hero-content {
-  width: var(--wrap);
-  margin: 0 auto;
-  padding: 90px 0;
-}
-
-.hero h1 { margin-bottom: 20px; }
-
-.hero-text { max-width: none; margin: 0 0 32px; }
 
 
 /* ============================================================
@@ -540,8 +531,8 @@ body.modal-open { overflow: hidden; }
 
 .service-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 18px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
   align-items: stretch;
 }
 
@@ -555,7 +546,7 @@ body.modal-open { overflow: hidden; }
 
 .service-image {
   width: 100%;
-  height: 210px;
+  height: 260px;
   overflow: hidden;
 }
 
@@ -719,7 +710,7 @@ body.modal-open { overflow: hidden; }
 .process-step:last-child { border-right: 0; }
 
 .process-step > span {
-  color: var(--gold);
+  color: var(--ink);
   font-family: var(--font-head);
   font-size: 16px;
   font-weight: 500;
@@ -746,7 +737,7 @@ body.modal-open { overflow: hidden; }
   padding: 22px 0;
 
   font-family: var(--font-head);
-  font-size: 16px;
+  font-size: 18px;
   cursor: pointer;
   list-style: none;
 }
@@ -754,7 +745,7 @@ body.modal-open { overflow: hidden; }
 .faq-list summary::-webkit-details-marker { display: none; }
 
 .faq-list summary span {
-  color: var(--gold);
+  color: var(--ink);
   font-family: var(--font-body);
   font-size: 18px;
 }
@@ -1022,7 +1013,7 @@ body.modal-open { overflow: hidden; }
   line-height: 1.7;
 }
 
-.gallery-caption .meta { margin-top: 4px; font-size: 14px; opacity: .75; }
+.gallery-caption .meta { margin-top: 4px; font-size: 16px; opacity: .75; }
 
 .gallery-card:hover .gallery-caption .name {
   text-decoration: underline;
@@ -1153,8 +1144,6 @@ body.modal-open { overflow: hidden; }
 
   .nav-toggle { display: block; }
 
-  .service-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-
   .process-grid { grid-template-columns: repeat(3, 1fr); }
 
   .process-step:nth-child(3) { border-right: 0; }
@@ -1212,9 +1201,9 @@ body.modal-open { overflow: hidden; }
 
   .mobile-nav a { padding: 16px 20px; }
 
-  .page-hero { min-height: 260px; }
+  .page-hero { min-height: 200px; }
 
-  .page-hero-content { padding: 40px 0; }
+  .page-hero-content { padding: 32px 0; }
 
   .section-lead { margin-bottom: 36px; }
 
