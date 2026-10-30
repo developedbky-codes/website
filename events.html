@@ -42,11 +42,18 @@
 
       </a>
 
-      <div class="nav-links">
-        <a href="index.html">WELCOME</a>
-        <a href="index.html#services">SERVICES</a>
+           <div class="nav-links">
+        <a href="index.html" class="active">WELCOME</a>
+
+        <div class="nav-item has-sub">
+          <a href="index.html#services" aria-haspopup="true">SERVICES<span class="caret" aria-hidden="true"></span></a>
+          <div class="subnav">
+            <a href="index.html#services">OUR SERVICES</a>
+            <a href="pricing.html">PRICING</a>
+          </div>
+        </div>
         <a href="about.html">ABOUT</a>
-        <a href="events.html" class="active">CLASSICS</a>
+        <a href="events.html">CLASSICS</a>
         <a href="booking.html">INQUIRE</a>
       </div>
 
@@ -65,10 +72,12 @@
     </nav>
 
     <div class="mobile-nav" id="mobileNav">
-      <a href="index.html">WELCOME</a>
+      <a href="index.html" class="active">WELCOME</a>
       <a href="index.html#services">SERVICES</a>
+      <a href="index.html#services"" class="sub">OUR SERVICES</a>
+      <a href="pricing.html" class="sub">PRICING</a>
       <a href="about.html">ABOUT</a>
-      <a href="events.html" class="active">CLASSICS</a>
+      <a href="events.html">CLASSICS</a>
       <a href="booking.html">INQUIRE</a>
     </div>
 
