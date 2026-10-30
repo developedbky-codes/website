@@ -221,7 +221,7 @@ body.modal-open { overflow: hidden; }
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 26px;
+  gap: 24px;
 }
 
 .nav-links a {
@@ -1045,6 +1045,124 @@ body.home .site-header { border-bottom-color: transparent; }
 
 
 /* ============================================================
+   PRICING PAGE
+============================================================ */
+
+.lead-copy { max-width: 820px; margin-bottom: 44px; }
+
+.lead-copy p { margin-bottom: 18px; }
+
+.split-pricing {
+  grid-template-columns: 1fr 1.05fr;
+  gap: 70px;
+  align-items: start;
+}
+
+.split-pricing > .lead-copy { margin-bottom: 0; }
+
+.price-card {
+  padding: 8px 36px 14px;
+  background: var(--white);
+}
+
+.price-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.price-table th {
+  padding: 22px 0 14px;
+
+  border-bottom: 1px solid var(--gold);
+
+  font-size: var(--size-eyebrow);
+  font-weight: 600;
+  letter-spacing: .16em;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.price-table td {
+  padding: 18px 0;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+}
+
+.price-table tr:last-child td { border-bottom: 0; }
+
+.price-table .amount {
+  padding-left: 20px;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.price-table td.amount {
+  font-family: var(--font-head);
+  font-size: var(--size-head);
+}
+
+.price-table.schedule td:first-child {
+  padding-right: 24px;
+  font-family: var(--font-head);
+  white-space: nowrap;
+}
+
+.price-table.schedule { margin-top: 10px; }
+
+.option { padding-bottom: 36px; }
+
+.option + .option { padding-top: 36px; border-top: 1px solid var(--line); }
+
+.option:last-child { padding-bottom: 0; }
+
+.option h3 { margin-bottom: 12px; }
+
+.option p:not(.eyebrow) { margin-bottom: 14px; }
+
+.note-box {
+  margin-top: 64px;
+  padding: 40px 44px;
+  background: var(--cream);
+}
+
+.note-box h3 { margin-bottom: 12px; }
+
+.note-box p { max-width: 900px; margin: 0; }
+
+.package { 
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  gap: 24px;
+  align-items: baseline;
+
+  padding: 22px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.package:first-child { border-top: 1px solid var(--gold); }
+
+.package-price {
+  font-family: var(--font-head);
+  font-size: var(--size-head);
+}
+
+.package h3 { margin-bottom: 4px; }
+
+.package p { margin: 0; }
+
+/* add-ons table on the dark band */
+.bg-ink .price-table th { border-bottom-color: var(--gold); }
+
+.bg-ink .price-table td { border-bottom-color: rgba(251, 248, 244, .22); }
+
+.price-table.stack td:first-child { padding-right: 28px; font-family: var(--font-head); }
+
+.price-table.stack td:nth-child(2) { padding-right: 28px; }
+
+.price-table.stack td:last-child { white-space: nowrap; }
+
+
+/* ============================================================
    CLASSICS PAGE
 ============================================================ */
 
@@ -1248,10 +1366,6 @@ body.home .site-header { border-bottom-color: transparent; }
 
   .nav { min-height: 78px; }
 
-  .nav-links { display: none; }
-
-  .nav-toggle { display: block; }
-
   .process-grid { grid-template-columns: repeat(3, 1fr); }
 
   .process-step:nth-child(3) { border-right: 0; }
@@ -1266,6 +1380,14 @@ body.home .site-header { border-bottom-color: transparent; }
 }
 
 
+@media (max-width: 1260px) {
+
+  .nav-links { display: none; }
+
+  .nav-toggle { display: block; }
+}
+
+
 /* ============================================================
    RESPONSIVE — 900px
 ============================================================ */
@@ -1275,6 +1397,7 @@ body.home .site-header { border-bottom-color: transparent; }
   .split,
   .split-founder,
   .split-booking,
+  .split-pricing,
   .split-image-first {
     grid-template-columns: 1fr;
     gap: 40px;
@@ -1353,6 +1476,30 @@ body.home .site-header { border-bottom-color: transparent; }
   .media-tall { height: 360px; }
 
   .media-founder { height: 400px; }
+
+  .price-card { padding: 4px 20px 10px; }
+
+  .note-box { padding: 28px 24px; }
+
+  .package { grid-template-columns: 1fr; gap: 6px; }
+
+  .price-table.schedule td:first-child { white-space: normal; }
+
+  .price-table.stack thead { display: none; }
+
+  .price-table.stack tr {
+    display: block;
+    padding: 18px 0;
+    border-bottom: 1px solid rgba(251, 248, 244, .22);
+  }
+
+  .price-table.stack td {
+    display: block;
+    padding: 2px 0;
+    border: 0;
+  }
+
+  .price-table.stack td:last-child::before { content: "Lead time: "; }
 
   .media-portrait { height: auto; }
 
